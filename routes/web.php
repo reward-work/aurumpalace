@@ -27,8 +27,17 @@ Route::group(['prefix' => App\Http\Middleware\LocaleMiddleware::getLocale()], fu
 
     Route::group(['middleware' => ['auth']], function() {
         Route::post('/template/set', 'TemplateController@set');
+        Route::get('/pages', 'PagesController@index')->name('pages');
+        Route::get('/edit-fields/{location}', 'FieldsController@edit')->name('edit-fields');
+        Route::post('/field-store', 'FieldsController@store')->name('field-store');
     });
 
 
 
+
+
 });
+
+
+
+Route::get('setlocale/{lang}', 'LanguagesController@set')->name('setlocale');

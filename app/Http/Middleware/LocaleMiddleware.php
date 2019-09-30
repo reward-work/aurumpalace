@@ -29,7 +29,7 @@ class LocaleMiddleware
 
 
         self::$languages = $array;
-
+        return $languages;
     }
 
 

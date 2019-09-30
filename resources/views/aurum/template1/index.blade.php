@@ -7,7 +7,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AURUMPALACE</title>
-    <link rel="shortcut icon" type="image/png" href="{% static 'images/fav.png') }}"/>
+    <link rel="shortcut icon" type="image/png" href="{{ asset('images/fav.png') }}"/>
     <link href="{{ asset('template1/css/reset.css') }}" rel="stylesheet">
     <link href="{{ asset('template1/css/bootstrap-grid.min.css') }}" rel="stylesheet">
     <link href="{{ asset('template1/css/FiraSans.css') }}" rel="stylesheet">

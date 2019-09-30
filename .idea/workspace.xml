@@ -2,13 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab5b72ab-cb87-4eeb-92ad-69953ec42a01" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/aurum/adminLTE/layouts/app.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/aurum/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/aurum/layouts/app.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/aurum/template1/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/aurum/template2/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/aurum/template3/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/aurum/template4/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/aurum/adminLTE/fields_page.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/aurum/adminLTE/pages.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a8d282dc-528d-44c0-ac24-bb7ce289d431.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a8d282dc-528d-44c0-ac24-bb7ce289d431.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/LocaleMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/LocaleMiddleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/aurum/adminLTE/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/aurum/adminLTE/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/aurum/adminLTE/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/aurum/adminLTE/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/aurum/template1/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/aurum/template1/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/aurum/template2/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/aurum/template2/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/aurum/template3/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/aurum/template3/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/aurum/template4/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/aurum/template4/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +59,14 @@
         <item name="aff_db@31.210.171.75" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="aff_db: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="templates: table" type="98d5ac3d:MysqlImplModel$Table" />
+        <item name="fields: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="aff_db@31.210.171.75" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="aff_db: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="pages: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -70,54 +85,61 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="artisan" value="1" />
           <entry key="css" value="1" />
           <entry key="env" value="3" />
-          <entry key="gitignore" value="2" />
+          <entry key="fields" value="7" />
+          <entry key="gitignore" value="3" />
           <entry key="html" value="1" />
           <entry key="js" value="1" />
           <entry key="json" value="2" />
-          <entry key="languages" value="2" />
-          <entry key="php" value="46" />
+          <entry key="languages" value="3" />
+          <entry key="pages" value="2" />
+          <entry key="php" value="79" />
           <entry key="sql" value="2" />
           <entry key="templates" value="2" />
+          <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="3" />
-          <entry key="Blade" value="12" />
+          <entry key="Blade" value="25" />
           <entry key="CSS" value="1" />
-          <entry key="Database Element" value="4" />
+          <entry key="Database Element" value="14" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="1" />
-          <entry key="PHP" value="34" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PHP" value="55" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="1" />
+          <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cell" value="149" />
+          <entry key="cell" value="739" />
           <entry key="css" value="49" />
           <entry key="env" value="27" />
           <entry key="gitignore" value="10" />
           <entry key="js" value="641" />
           <entry key="json" value="1" />
-          <entry key="php" value="2924" />
+          <entry key="php" value="10055" />
+          <entry key="sql" value="121" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="27" />
-          <entry key="Blade" value="662" />
+          <entry key="Blade" value="3436" />
           <entry key="CSS" value="49" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="641" />
-          <entry key="PHP" value="2262" />
+          <entry key="PHP" value="6619" />
           <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Scratch" value="149" />
+          <entry key="SQL" value="121" />
+          <entry key="Scratch" value="739" />
         </counts>
       </usages-collector>
     </session>
@@ -125,31 +147,62 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="e#40#68#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="298">
+              <caret line="31" column="83" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="83" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/aurum/template1/index.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FieldsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="173" column="108" lean-forward="true" selection-start-line="173" selection-start-column="108" selection-end-line="173" selection-end-column="108" />
+            <state relative-caret-position="130">
+              <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
+              <folding>
+                <element signature="e#39#51#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+        <entry file="file://$PROJECT_DIR$/app/Field.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+            <state relative-caret-position="208">
+              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/aurum/adminLTE/fields_page.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="31" column="94" selection-start-line="31" selection-start-column="94" selection-end-line="31" selection-end-column="94" />
+              <folding>
+                <element signature="e#1433#1487#0#HTML" expanded="true" />
+                <element signature="e#1352#1398#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aurumpalace.net/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/aurum/adminLTE/layouts/app.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="62" column="89" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -167,7 +220,14 @@
       <find>jpg&quot;</find>
       <find>css&quot;</find>
       <find>{% static 'afflandings/af1</find>
+      <find>mastercard</find>
+      <find>{% static '</find>
       <find>' %}</find>
+      <find>asset('afflandings</find>
+      <find>afflandings/af2/</find>
+      <find>afflandings/af3/</find>
+      <find>afflandings/af4/</find>
+      <find>options</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -184,34 +244,43 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/config/database.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/server.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/aurumpalace.net/index.php" />
         <option value="$PROJECT_DIR$/resources/views/aurum/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/aurum/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_09_29_194138_create_languages_table.php" />
         <option value="$PROJECT_DIR$/app/Language.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
-        <option value="$PROJECT_DIR$/app/Http/Middleware/LocaleMiddleware.php" />
-        <option value="$PROJECT_DIR$/resources/views/aurum/adminLTE/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_09_30_064327_create_templates_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TemplateController.php" />
         <option value="$PROJECT_DIR$/app/Template.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
-        <option value="$PROJECT_DIR$/resources/views/aurum/adminLTE/dashboard.blade.php" />
         <option value="$PROJECT_DIR$/aurumpalace.net/assets/dist/css/AdminLTE.min.css" />
         <option value="$PROJECT_DIR$/aurumpalace.net/assets/dist/js/demo.js" />
         <option value="$PROJECT_DIR$/aurumpalace.net/template1/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/resources/views/aurum/template1/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/aurum/template2/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/aurum/template3/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/aurum/template4/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/resources/views/aurum/template1/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/LocaleMiddleware.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/LanguagesController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_09_30_080645_create_pages_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/aurum/adminLTE/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/aurum/adminLTE/dashboard.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" />
+        <option value="$PROJECT_DIR$/resources/views/aurum/adminLTE/pages.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_09_30_081908_create_fields_table.php" />
+        <option value="$PROJECT_DIR$/config/database.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Field.php" />
+        <option value="$PROJECT_DIR$/aurumpalace.net/index.php" />
+        <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
+        <option value="$PROJECT_DIR$/resources/views/aurum/adminLTE/fields_page.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/FieldsController.php" />
       </list>
     </option>
   </component>
@@ -364,19 +433,46 @@
             <path>
               <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
               <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
               <item name="aurumpalace.net" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
               <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
               <item name="aurumpalace.net" type="462c0819:PsiDirectoryNode" />
-              <item name="template1" type="462c0819:PsiDirectoryNode" />
+              <item name="uploads" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
               <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
-              <item name="aurumpalace.net" type="462c0819:PsiDirectoryNode" />
-              <item name="template2" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
@@ -410,12 +506,39 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="aurum" type="462c0819:PsiDirectoryNode" />
-              <item name="template1" type="462c0819:PsiDirectoryNode" />
+              <item name="adminLTE" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
               <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -434,6 +557,9 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\OSPanel\domains\aurum.net\aurumpalace.net" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\OSPanel\domains\aurum.net\aurumpalace.net\template1" />
       <recent name="D:\OSPanel\domains\aurum.net\aurumpalace.net" />
@@ -465,12 +591,12 @@
       <workItem from="1569687881048" duration="17841000" />
       <workItem from="1569752017072" duration="100000" />
       <workItem from="1569752500172" duration="155000" />
-      <workItem from="1569752689134" duration="9857000" />
+      <workItem from="1569752689134" duration="25726000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27953000" />
+    <option name="totallyTimeSpent" value="43822000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -492,8 +618,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="File Transfer" order="9" weight="0.3207856" />
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.30605564" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49924356" visible="true" weight="0.30605564" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50075644" side_tool="true" weight="0.30605564" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -532,9 +658,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/aurumpalace.net/index.html" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/TagsController.php" />
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3008" />
@@ -545,13 +668,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="56" selection-start-line="56" selection-end-line="67" selection-end-column="10" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -595,28 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aurumpalace.net/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/aurum/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-          <folding>
-            <element signature="e#798#804#0#HTML" expanded="true" />
-            <element signature="e#814#820#0#HTML" expanded="true" />
-            <element signature="e#890#896#0#HTML" expanded="true" />
-            <element signature="e#1049#1054#0#HTML" expanded="true" />
-            <element signature="e#5228#5235#0#HTML" expanded="true" />
-            <element signature="e#5243#5250#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/aurum/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2525">
@@ -648,20 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://a8d282dc-528d-44c0-ac24-bb7ce289d431/schema/aff_db/table/languages">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/aurum/adminLTE/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="258" column="7" lean-forward="true" selection-start-line="258" selection-start-column="7" selection-end-line="258" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://a8d282dc-528d-44c0-ac24-bb7ce289d431/schema/aff_db/table/templates">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -669,27 +749,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_30_064327_create_templates_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/LocaleMiddleware.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="60" column="44" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
-          <folding>
-            <element signature="e#39#51#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -714,13 +777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/aurum/adminLTE/dashboard.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -818,13 +874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="28" column="56" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/aurumpalace.net/template1/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -841,59 +890,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/aurum/template2/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/aurum/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="198" lean-forward="true" selection-start-line="198" selection-end-line="198" />
-          <folding>
-            <element signature="e#2043#2049#0#HTML" expanded="true" />
-            <element signature="e#2059#2065#0#HTML" expanded="true" />
-            <element signature="e#2131#2137#0#HTML" expanded="true" />
-            <element signature="e#2282#2287#0#HTML" expanded="true" />
-            <element signature="e#5609#5616#0#HTML" expanded="true" />
-            <element signature="e#5624#5631#0#HTML" expanded="true" />
-            <element signature="e#12489#12495#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1291">
+          <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/aurum/template3/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="207" lean-forward="true" selection-start-line="207" selection-end-line="207" />
-          <folding>
-            <element signature="e#1832#1839#0#HTML" expanded="true" />
-            <element signature="e#1888#1894#0#HTML" expanded="true" />
-            <element signature="e#1940#1946#0#HTML" expanded="true" />
-            <element signature="e#1949#1955#0#HTML" expanded="true" />
-            <element signature="e#2198#2204#0#HTML" expanded="true" />
-            <element signature="e#2208#2214#0#HTML" expanded="true" />
-            <element signature="e#2259#2265#0#HTML" expanded="true" />
-            <element signature="e#2410#2415#0#HTML" expanded="true" />
-            <element signature="e#6154#6161#0#HTML" expanded="true" />
-            <element signature="e#6169#6176#0#HTML" expanded="true" />
-            <element signature="e#13034#13040#0#HTML" expanded="true" />
-          </folding>
+          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <caret line="71" column="74" selection-start-line="71" selection-start-column="74" selection-end-line="71" selection-end-column="74" />
+          <caret line="81" column="74" selection-start-line="81" selection-start-column="74" selection-end-line="81" selection-end-column="74" />
+          <caret line="91" column="74" selection-start-line="91" selection-start-column="74" selection-end-line="91" selection-end-column="74" />
+          <caret line="124" column="76" selection-start-line="124" selection-start-column="76" selection-end-line="124" selection-end-column="76" />
+          <caret line="125" column="76" selection-start-line="125" selection-start-column="76" selection-end-line="125" selection-end-column="76" />
+          <caret line="126" column="76" selection-start-line="126" selection-start-column="76" selection-end-line="126" selection-end-column="76" />
+          <caret line="127" column="76" selection-start-line="127" selection-start-column="76" selection-end-line="127" selection-end-column="76" />
+          <caret line="128" column="76" selection-start-line="128" selection-start-column="76" selection-end-line="128" selection-end-column="76" />
+          <caret line="129" column="76" selection-start-line="129" selection-start-column="76" selection-end-line="129" selection-end-column="76" />
+          <caret line="130" column="76" selection-start-line="130" selection-start-column="76" selection-end-line="130" selection-end-column="76" />
+          <caret line="131" column="76" selection-start-line="131" selection-start-column="76" selection-end-line="131" selection-end-column="76" />
+          <caret line="132" column="76" selection-start-line="132" selection-start-column="76" selection-end-line="132" selection-end-column="76" />
+          <caret line="133" column="76" selection-start-line="133" selection-start-column="76" selection-end-line="133" selection-end-column="76" />
+          <caret line="134" column="76" selection-start-line="134" selection-start-column="76" selection-end-line="134" selection-end-column="76" />
+          <caret line="135" column="76" selection-start-line="135" selection-start-column="76" selection-end-line="135" selection-end-column="76" />
+          <caret line="136" column="76" selection-start-line="136" selection-start-column="76" selection-end-line="136" selection-end-column="76" />
+          <caret line="137" column="76" selection-start-line="137" selection-start-column="76" selection-end-line="137" selection-end-column="76" />
+          <caret line="138" column="76" selection-start-line="138" selection-start-column="76" selection-end-line="138" selection-end-column="76" />
+          <caret line="139" column="76" selection-start-line="139" selection-start-column="76" selection-end-line="139" selection-end-column="76" />
+          <caret line="153" column="76" selection-start-line="153" selection-start-column="76" selection-end-line="153" selection-end-column="76" />
+          <caret line="154" column="76" selection-start-line="154" selection-start-column="76" selection-end-line="154" selection-end-column="76" />
+          <caret line="155" column="76" selection-start-line="155" selection-start-column="76" selection-end-line="155" selection-end-column="76" />
+          <caret line="156" column="76" selection-start-line="156" selection-start-column="76" selection-end-line="156" selection-end-column="76" />
+          <caret line="157" column="76" selection-start-line="157" selection-start-column="76" selection-end-line="157" selection-end-column="76" />
+          <caret line="158" column="76" selection-start-line="158" selection-start-column="76" selection-end-line="158" selection-end-column="76" />
+          <caret line="159" column="76" selection-start-line="159" selection-start-column="76" selection-end-line="159" selection-end-column="76" />
+          <caret line="160" column="76" selection-start-line="160" selection-start-column="76" selection-end-line="160" selection-end-column="76" />
+          <caret line="161" column="76" selection-start-line="161" selection-start-column="76" selection-end-line="161" selection-end-column="76" />
+          <caret line="162" column="76" selection-start-line="162" selection-start-column="76" selection-end-line="162" selection-end-column="76" />
+          <caret line="163" column="76" selection-start-line="163" selection-start-column="76" selection-end-line="163" selection-end-column="76" />
+          <caret line="164" column="76" selection-start-line="164" selection-start-column="76" selection-end-line="164" selection-end-column="76" />
+          <caret line="165" column="76" selection-start-line="165" selection-start-column="76" selection-end-line="165" selection-end-column="76" />
+          <caret line="166" column="76" selection-start-line="166" selection-start-column="76" selection-end-line="166" selection-end-column="76" />
+          <caret line="167" column="76" selection-start-line="167" selection-start-column="76" selection-end-line="167" selection-end-column="76" />
+          <caret line="168" column="76" selection-start-line="168" selection-start-column="76" selection-end-line="168" selection-end-column="76" />
+          <caret line="169" column="76" selection-start-line="169" selection-start-column="76" selection-end-line="169" selection-end-column="76" />
+          <caret line="170" column="76" selection-start-line="170" selection-start-column="76" selection-end-line="170" selection-end-column="76" />
+          <caret line="173" column="74" selection-start-line="173" selection-start-column="74" selection-end-line="173" selection-end-column="74" />
+          <caret line="174" column="74" selection-start-line="174" selection-start-column="74" selection-end-line="174" selection-end-column="74" />
+          <caret line="175" column="74" selection-start-line="175" selection-start-column="74" selection-end-line="175" selection-end-column="74" />
+          <caret line="177" column="74" selection-start-line="177" selection-start-column="74" selection-end-line="177" selection-end-column="74" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/aurum/template4/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="201" lean-forward="true" selection-start-line="201" selection-end-line="201" />
-          <folding>
-            <element signature="e#2177#2183#0#HTML" expanded="true" />
-            <element signature="e#5935#5942#0#HTML" expanded="true" />
-            <element signature="e#5950#5957#0#HTML" expanded="true" />
-            <element signature="e#12815#12821#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <caret line="48" column="62" selection-start-line="48" selection-start-column="62" selection-end-line="48" selection-end-column="62" />
+          <caret line="118" column="76" selection-start-line="118" selection-start-column="76" selection-end-line="118" selection-end-column="76" />
+          <caret line="119" column="76" selection-start-line="119" selection-start-column="76" selection-end-line="119" selection-end-column="76" />
+          <caret line="120" column="76" selection-start-line="120" selection-start-column="76" selection-end-line="120" selection-end-column="76" />
+          <caret line="121" column="76" selection-start-line="121" selection-start-column="76" selection-end-line="121" selection-end-column="76" />
+          <caret line="122" column="76" selection-start-line="122" selection-start-column="76" selection-end-line="122" selection-end-column="76" />
+          <caret line="123" column="76" selection-start-line="123" selection-start-column="76" selection-end-line="123" selection-end-column="76" />
+          <caret line="124" column="76" selection-start-line="124" selection-start-column="76" selection-end-line="124" selection-end-column="76" />
+          <caret line="125" column="76" selection-start-line="125" selection-start-column="76" selection-end-line="125" selection-end-column="76" />
+          <caret line="126" column="76" selection-start-line="126" selection-start-column="76" selection-end-line="126" selection-end-column="76" />
+          <caret line="127" column="76" selection-start-line="127" selection-start-column="76" selection-end-line="127" selection-end-column="76" />
+          <caret line="128" column="76" selection-start-line="128" selection-start-column="76" selection-end-line="128" selection-end-column="76" />
+          <caret line="129" column="76" selection-start-line="129" selection-start-column="76" selection-end-line="129" selection-end-column="76" />
+          <caret line="130" column="76" selection-start-line="130" selection-start-column="76" selection-end-line="130" selection-end-column="76" />
+          <caret line="131" column="76" selection-start-line="131" selection-start-column="76" selection-end-line="131" selection-end-column="76" />
+          <caret line="132" column="76" selection-start-line="132" selection-start-column="76" selection-end-line="132" selection-end-column="76" />
+          <caret line="133" column="76" selection-start-line="133" selection-start-column="76" selection-end-line="133" selection-end-column="76" />
+          <caret line="147" column="76" selection-start-line="147" selection-start-column="76" selection-end-line="147" selection-end-column="76" />
+          <caret line="148" column="76" selection-start-line="148" selection-start-column="76" selection-end-line="148" selection-end-column="76" />
+          <caret line="149" column="76" selection-start-line="149" selection-start-column="76" selection-end-line="149" selection-end-column="76" />
+          <caret line="150" column="76" selection-start-line="150" selection-start-column="76" selection-end-line="150" selection-end-column="76" />
+          <caret line="151" column="76" selection-start-line="151" selection-start-column="76" selection-end-line="151" selection-end-column="76" />
+          <caret line="152" column="76" selection-start-line="152" selection-start-column="76" selection-end-line="152" selection-end-column="76" />
+          <caret line="153" column="76" selection-start-line="153" selection-start-column="76" selection-end-line="153" selection-end-column="76" />
+          <caret line="154" column="76" selection-start-line="154" selection-start-column="76" selection-end-line="154" selection-end-column="76" />
+          <caret line="155" column="76" selection-start-line="155" selection-start-column="76" selection-end-line="155" selection-end-column="76" />
+          <caret line="156" column="76" selection-start-line="156" selection-start-column="76" selection-end-line="156" selection-end-column="76" />
+          <caret line="157" column="76" selection-start-line="157" selection-start-column="76" selection-end-line="157" selection-end-column="76" />
+          <caret line="158" column="76" selection-start-line="158" selection-start-column="76" selection-end-line="158" selection-end-column="76" />
+          <caret line="159" column="76" selection-start-line="159" selection-start-column="76" selection-end-line="159" selection-end-column="76" />
+          <caret line="160" column="76" selection-start-line="160" selection-start-column="76" selection-end-line="160" selection-end-column="76" />
+          <caret line="161" column="76" selection-start-line="161" selection-start-column="76" selection-end-line="161" selection-end-column="76" />
+          <caret line="162" column="76" selection-start-line="162" selection-start-column="76" selection-end-line="162" selection-end-column="76" />
+          <caret line="163" column="76" selection-start-line="163" selection-start-column="76" selection-end-line="163" selection-end-column="76" />
+          <caret line="164" column="76" selection-start-line="164" selection-start-column="76" selection-end-line="164" selection-end-column="76" />
+          <caret line="167" column="74" selection-start-line="167" selection-start-column="74" selection-end-line="167" selection-end-column="74" />
+          <caret line="168" column="74" selection-start-line="168" selection-start-column="74" selection-end-line="168" selection-end-column="74" />
+          <caret line="169" column="74" selection-start-line="169" selection-start-column="74" selection-end-line="169" selection-end-column="74" />
+          <caret line="171" column="74" selection-start-line="171" selection-start-column="74" selection-end-line="171" selection-end-column="74" />
         </state>
       </provider>
     </entry>
@@ -909,8 +1011,225 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/aurum/template1/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="128" column="75" selection-start-line="128" selection-start-column="66" selection-end-line="128" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/aurum/template2/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <caret line="115" column="76" selection-start-line="115" selection-start-column="76" selection-end-line="115" selection-end-column="76" />
+          <caret line="116" column="76" selection-start-line="116" selection-start-column="76" selection-end-line="116" selection-end-column="76" />
+          <caret line="117" column="76" selection-start-line="117" selection-start-column="76" selection-end-line="117" selection-end-column="76" />
+          <caret line="118" column="76" selection-start-line="118" selection-start-column="76" selection-end-line="118" selection-end-column="76" />
+          <caret line="119" column="76" selection-start-line="119" selection-start-column="76" selection-end-line="119" selection-end-column="76" />
+          <caret line="120" column="76" selection-start-line="120" selection-start-column="76" selection-end-line="120" selection-end-column="76" />
+          <caret line="121" column="76" selection-start-line="121" selection-start-column="76" selection-end-line="121" selection-end-column="76" />
+          <caret line="122" column="76" selection-start-line="122" selection-start-column="76" selection-end-line="122" selection-end-column="76" />
+          <caret line="123" column="76" selection-start-line="123" selection-start-column="76" selection-end-line="123" selection-end-column="76" />
+          <caret line="124" column="76" selection-start-line="124" selection-start-column="76" selection-end-line="124" selection-end-column="76" />
+          <caret line="125" column="76" selection-start-line="125" selection-start-column="76" selection-end-line="125" selection-end-column="76" />
+          <caret line="126" column="76" selection-start-line="126" selection-start-column="76" selection-end-line="126" selection-end-column="76" />
+          <caret line="127" column="76" selection-start-line="127" selection-start-column="76" selection-end-line="127" selection-end-column="76" />
+          <caret line="128" column="76" selection-start-line="128" selection-start-column="76" selection-end-line="128" selection-end-column="76" />
+          <caret line="129" column="76" selection-start-line="129" selection-start-column="76" selection-end-line="129" selection-end-column="76" />
+          <caret line="130" column="76" selection-start-line="130" selection-start-column="76" selection-end-line="130" selection-end-column="76" />
+          <caret line="144" column="76" selection-start-line="144" selection-start-column="76" selection-end-line="144" selection-end-column="76" />
+          <caret line="145" column="76" selection-start-line="145" selection-start-column="76" selection-end-line="145" selection-end-column="76" />
+          <caret line="146" column="76" selection-start-line="146" selection-start-column="76" selection-end-line="146" selection-end-column="76" />
+          <caret line="147" column="76" selection-start-line="147" selection-start-column="76" selection-end-line="147" selection-end-column="76" />
+          <caret line="148" column="76" selection-start-line="148" selection-start-column="76" selection-end-line="148" selection-end-column="76" />
+          <caret line="149" column="76" selection-start-line="149" selection-start-column="76" selection-end-line="149" selection-end-column="76" />
+          <caret line="150" column="76" selection-start-line="150" selection-start-column="76" selection-end-line="150" selection-end-column="76" />
+          <caret line="151" column="76" selection-start-line="151" selection-start-column="76" selection-end-line="151" selection-end-column="76" />
+          <caret line="152" column="76" selection-start-line="152" selection-start-column="76" selection-end-line="152" selection-end-column="76" />
+          <caret line="153" column="76" selection-start-line="153" selection-start-column="76" selection-end-line="153" selection-end-column="76" />
+          <caret line="154" column="76" selection-start-line="154" selection-start-column="76" selection-end-line="154" selection-end-column="76" />
+          <caret line="155" column="76" selection-start-line="155" selection-start-column="76" selection-end-line="155" selection-end-column="76" />
+          <caret line="156" column="76" selection-start-line="156" selection-start-column="76" selection-end-line="156" selection-end-column="76" />
+          <caret line="157" column="76" selection-start-line="157" selection-start-column="76" selection-end-line="157" selection-end-column="76" />
+          <caret line="158" column="76" selection-start-line="158" selection-start-column="76" selection-end-line="158" selection-end-column="76" />
+          <caret line="159" column="76" selection-start-line="159" selection-start-column="76" selection-end-line="159" selection-end-column="76" />
+          <caret line="160" column="76" selection-start-line="160" selection-start-column="76" selection-end-line="160" selection-end-column="76" />
+          <caret line="161" column="76" selection-start-line="161" selection-start-column="76" selection-end-line="161" selection-end-column="76" />
+          <caret line="164" column="74" selection-start-line="164" selection-start-column="74" selection-end-line="164" selection-end-column="74" />
+          <caret line="165" column="74" selection-start-line="165" selection-start-column="74" selection-end-line="165" selection-end-column="74" />
+          <caret line="166" column="74" selection-start-line="166" selection-start-column="74" selection-end-line="166" selection-end-column="74" />
+          <caret line="168" column="74" selection-start-line="168" selection-start-column="74" selection-end-line="168" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a8d282dc-528d-44c0-ac24-bb7ce289d431/schema/aff_db/table/languages">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LanguagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/LocaleMiddleware.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="40" />
+          <folding>
+            <element signature="e#39#51#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a8d282dc-528d-44c0-ac24-bb7ce289d431/schema/aff_db/table/pages">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_30_080645_create_pages_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_30_064327_create_templates_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/aurum/adminLTE/pages.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_30_081908_create_fields_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="62" column="50" selection-start-line="62" selection-start-column="50" selection-end-line="62" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/aurum/adminLTE/dashboard.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6422">
+          <caret line="247" lean-forward="true" selection-start-line="247" selection-end-line="247" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/aurum/adminLTE/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="62" column="89" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Field.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aurumpalace.net/storage/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artisan">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1158" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.styleci.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="31" column="83" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aurumpalace.net/index.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
-          <caret line="173" column="108" lean-forward="true" selection-start-line="173" selection-start-column="108" selection-end-line="173" selection-end-column="108" />
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a8d282dc-528d-44c0-ac24-bb7ce289d431/schema/aff_db/table/fields">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/aurum/adminLTE/fields_page.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="31" column="94" selection-start-line="31" selection-start-column="94" selection-end-line="31" selection-end-column="94" />
+          <folding>
+            <element signature="e#1433#1487#0#HTML" expanded="true" />
+            <element signature="e#1352#1398#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FieldsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
+          <folding>
+            <element signature="e#39#51#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
