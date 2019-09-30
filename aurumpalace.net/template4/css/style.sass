@@ -1,0 +1,79 @@
+$screen: 1680px
+$tablet: 1025px
+$mobile: 767px
+$mini: 320px
+
+///-------My variable--------------------------------
+$white: #ffffff
+$black: #000000
+$customColor: #ffc964
+$fontTrajan: 'Trajan'
+$fontL: 'Lato', sans-serif
+$btnColor: #724820
+$btnBg: linear-gradient(to bottom, #ffc964, #a66b27)
+/////------------------------------------------------
+body,html, *
+  font-size: 10px
+  font-family: $fontL
+  //scroll-behavior: smooth
+  @media screen and (max-width: 1024px)
+    font-size: 8px
+  @media screen and (max-width: 768px)
+    font-size: 6px
+  @media screen and (max-width: 340px)
+    font-size: 5px
+a
+  cursor: pointer
+  text-decoration: none
+  a:hover
+    text-decoration: none
+button
+  outline: none
+  cursor: pointer
+  border: none
+  //Custom setting
+.btn
+  height: 72px
+  font-size: 1.5rem
+  font-weight: 900
+  line-height: 1.5rem
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 3px
+  background-image: $btnBg
+  text-shadow: 0 1px 2px rgba(255, 228, 185, 0.5), 0 1px 1px #000000
+  box-shadow: 0 6px 12px -3px #604831, inset 0 2px 3px 0 rgba(255, 255, 255, 0.75), inset 0 -2px 6px 0 #311d05
+  color: $btnColor
+  font-family: $fontL
+  @media screen and (max-width: $tablet)
+    font-size: 3.33rem
+    line-height: 4rem
+    @media screen and (max-width: $mobile)
+      font-size: 2.5rem
+      line-height: 3rem
+  &:hover
+    box-shadow: 0 12px 18px -3px rgba(96, 72, 49, 0.5), inset 0 2px 3px 0 rgba(255, 255, 255, 0.75), inset 0 -2px 6px 0 #311d05
+    background-image: linear-gradient(to bottom, #ffdb96, #d78b33)
+.view
+  max-width: 1055px
+  margin: auto
+.main_wrapper
+  display: flex
+  flex-direction: column
+  width: 100%
+  overflow: hidden
+  section
+    position: relative
+    flex-grow: 1
+    overflow: hidden
+
+.h-full
+  height: 100%
+
+@import "header"
+///-------Content Landing-------->
+@import "main"
+@import "submain"
+///--------------->
+@import "footer"

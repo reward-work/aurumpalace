@@ -1,0 +1,94 @@
+footer
+  background-color: $black
+  @media screen and (max-width: $tablet)
+    padding: 0 13.33rem
+    @media screen and (max-width: $mobile)
+      padding: 0 3.33rem
+.footer_social
+  position: relative
+  display: flex
+  justify-content: center
+  margin-bottom: 5rem
+  .social_icon
+    margin-left: 20px
+    img
+      width: 30px
+      height: auto
+    &:first-child
+      margin-left: 0
+.partners_list_company
+  padding: 2.5rem 0
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  .partners_company
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    max-width: 110px
+    width: 10vw
+    min-width: 80px
+    margin-bottom: 3rem
+    @media screen and (max-width: $tablet)
+      margin-bottom: 5rem
+      @media screen and (max-width: $mobile)
+        width: 45%
+        min-width: 130px
+    &:nth-child(1n + 9)
+      display: block
+      @media screen and (max-width: $mobile)
+          display: none
+    img
+      width: 80%
+      height: auto
+.managed_text
+  text-align: center
+  font-size: 1.2rem
+  line-height: 1.6rem
+  color: #606060
+  @media screen and (max-width: $tablet)
+    font-size: 2.33rem
+    line-height: 3rem
+.footer_company_list
+  display: flex
+  flex-direction: row
+  justify-content: center
+  flex-wrap: wrap
+  margin-bottom: 3rem
+  .footer_company
+    min-width: 200px
+    width: 10vw
+    display: flex
+    justify-content: center
+    align-items: center
+    @media screen and (max-width: $tablet)
+      width: 20vw
+      min-width: 260px
+      margin-bottom: 5rem
+
+.footer_responsibly
+  text-align: center
+  color: #494949
+  font-size: 1.2rem
+  line-height: 1.6rem
+  font-family: 'Roboto', sans-serif
+  font-weight: 400
+  margin-bottom: 1.5rem
+  @media screen and (max-width: $tablet)
+    font-size: 2.33rem
+    line-height: 3rem
+    margin-bottom: 3rem
+.footer_copy
+  text-transform: uppercase
+  text-align: center
+  color: #494949
+  font-size: 1.2rem
+  line-height: 1.6rem
+  font-family: 'Roboto', sans-serif
+  font-weight: 400
+  margin-bottom: 1.5rem
+  @media screen and (max-width: $tablet)
+    font-size: 2.33rem
+    line-height: 3rem
+    margin-bottom: 5rem

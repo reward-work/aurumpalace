@@ -1,0 +1,96 @@
+.sub_main
+  background-image: linear-gradient(to bottom, #9a1f20, #000000)
+  padding: 4rem 0 2rem
+  @media screen and (max-width: $tablet)
+    padding: 8rem 11rem
+    @media screen and (max-width: $mobile)
+      padding: 4rem 0
+  &_title
+    text-align: center
+    font-size: 2.4rem
+    font-weight: 700
+    line-height: 4.2rem
+    color: $customColor
+    margin-bottom: 3rem
+    @media screen and (max-width: $tablet)
+      margin-bottom: 5rem
+      font-size: 6rem
+      line-height: 7rem
+      @media screen and (max-width: $mobile)
+        font-size: 3rem
+        line-height: 4rem
+        margin-bottom: 3rem
+  &_item
+    display: flex
+    flex-direction: row
+    justify-content: center
+    margin-bottom: 2.5rem
+    @media screen and (max-width: $tablet)
+      flex-direction: column
+      align-items: center
+      margin-bottom: 5rem
+    &_text
+      //display: flex
+      //flex-direction: column
+      //align-items: center
+    &_title
+      width: 70%
+      font-size: 1.8rem
+      font-weight: 700
+      line-height: 2.2rem
+      color: $customColor
+      @media screen and (max-width: $tablet)
+        width: 100%
+        font-size: 4rem
+        line-height: 5rem
+        @media screen and (max-width: $mobile)
+          font-size: 3rem
+          line-height: 4rem
+
+
+  &_icon
+    height: auto
+    width: 60px
+    margin-right: 2rem
+    @media screen and (max-width: $tablet)
+      margin-right: 0
+      margin-bottom: 2rem
+    img
+      width: 100%
+      height: auto
+  &_text
+    position: relative
+    text-align: center
+    padding-top: 1rem
+    margin-bottom: 1.5rem
+    &:after
+      position: absolute
+      height: 1px
+      width: 100%
+      content: ''
+      top: 0
+      left: 0
+      background-image: linear-gradient(to bottom, #ffd58f, #956832)
+    p
+      font-size: 1.2rem
+      line-height: 1.5rem
+      color: $customColor
+      opacity: 0.5
+      font-weight: 400
+      @media screen and (max-width: $tablet)
+        font-size: 2rem
+        line-height: 3rem
+        @media screen and (max-width: $mobile)
+
+  &_small_text
+    text-align: center
+    p
+      font-size: 0.9rem
+      line-height: 1.5rem
+      color: $customColor
+      opacity: 0.5
+      font-weight: 400
+      @media screen and (max-width: $tablet)
+        font-size: 1.5rem
+        line-height: 2rem
+

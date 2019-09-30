@@ -1,0 +1,120 @@
+.header
+  position: fixed
+  z-index: 100
+  top: 0
+  left: 0
+  width: 100%
+  padding: 2rem 10rem
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(54,48,44,0.75))
+  transition: background-color 500ms
+  @media screen and (max-width: $tablet)
+    padding: 4rem 11rem
+    @media screen and (max-width: $mobile)
+      display: flex
+      align-items: center
+      height: 60px
+      padding: 2rem 3.33rem
+  &_logo
+    width: 15vw
+    height: auto
+    @media screen and (max-width: $tablet)
+      width: 35vw
+      @media screen and (max-width: $mobile)
+          height: 25px
+          width: 50%
+          @media screen and (max-height: 500px)
+            height: auto
+            width: 60%
+            margin-bottom: 0
+    img
+      width: 100%
+      height: auto
+  &_btn
+    margin-left: 3vw
+    a
+      height: 30px
+      padding: 6px 10px
+
+
+
+//Select Lang
+.select-lang
+  position: relative
+  width: 60px
+  @media screen and (max-width: $tablet)
+    margin-bottom: 0
+    @media screen and (max-width: $mobile)
+      width: 45px
+      margin-right: 2rem
+  .selectBtn
+    background: transparent
+    padding: 10px
+    box-sizing: border-box
+    border-radius: 3px
+    width: 100%
+    cursor: pointer
+    position: relative
+    user-select: none
+    font-size: 1.8rem
+    line-height: 2rem
+    color: #fbb95c
+    @media screen and (max-width: $tablet)
+      font-size: 3rem
+      line-height: 4rem
+      @media screen and (max-width: $mobile)
+        padding: 0
+        font-size: 3rem
+        line-height: 3rem
+    &:after
+      content: ""
+      position: absolute
+      top: 45%
+      right: 0
+      width: 8px
+      height: 8px
+      transform: translateY(-50%) rotate(45deg)
+      border-right: 2px solid $customColor
+      border-bottom: 2px solid $customColor
+      transition: 0.2s ease
+
+  .toggleBtn
+    border-radius: 3px 3px 0 0
+    &:after
+      transform: translateY(-50%) rotate(-135deg)
+
+
+
+  .selectDropdown
+    position: absolute
+    top: 100%
+    width: 100%
+    border-radius: 3px
+    overflow-y: scroll
+    overflow-x: hidden
+    border-top: 1px solid #eee
+    z-index: 1
+    background: #fff5e8
+    transform: scale(1,0)
+    transform-origin: top center
+    visibility: hidden
+    transition: 0.2s ease
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2)
+    padding: 1rem
+    .option
+      box-sizing: border-box
+      cursor: pointer
+      color: #fbb95c
+      font-size: 1.5rem
+      line-height: 2.5rem
+      @media screen and (max-width: $tablet)
+        font-size: 3rem
+        line-height: 5rem
+      &:hover
+        background: #f8f8f8
+
+  .active_lang
+    opacity: 0.5
+  .toggle
+    visibility: visible
+    transform: scale(1.2,1)
+

@@ -1,0 +1,127 @@
+.main
+  height: 80vh
+  min-height: 600px
+  position: relative
+  overflow: hidden
+  padding: 15vh 0 3rem
+  background-image:  url("../img/spincess@2x.png"), url("../img/bg@2x.png")
+  background-repeat: no-repeat , no-repeat
+  background-position:  25% bottom, center center
+  background-size: 32%, cover
+  @media screen and (max-width: $tablet)
+    background-image:  url("../img/mobile@3x.jpg")
+    background-size: cover
+    background-position: center -5%
+    background-repeat: no-repeat
+    @media screen and (max-width: $mobile)
+      background-size: 120%
+      background-position: center 0
+      padding: 0 1rem 4rem
+      min-height: 440px
+      margin-top: 60px
+      height: 70vh
+      @media screen and (max-width: $mobile)
+        background-size: 100%
+  &_content
+    width: 100%
+    position: relative
+    z-index: 2
+    border-style: solid
+    border-width: 3px
+    border-image-source: linear-gradient(220deg, #fed99c, #72532e)
+    border-image-slice: 1
+    padding: 3vh 4vw
+    height: 90%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    @media screen and (max-width: 1500px)
+      width: 88%
+      height: 100%
+      padding: 3vh 5vw
+      @media screen and (max-width: $tablet)
+        border: none
+        height: auto
+        @media screen and (max-width: $mobile)
+          width: 100%
+          padding: 0
+  &_title
+    text-align: center
+    font-size: 6.6rem
+    line-height: 7rem
+    font-weight: 500
+    text-shadow: 0 0 10px #000000
+    color: $orange
+    @media screen and (max-width: $tablet)
+      font-size: 10rem
+      line-height: 12rem
+      margin-bottom: 4rem
+      @media screen and (max-width: $mobile)
+        font-size: 5rem
+        line-height: 6rem
+        margin-bottom: 1.5rem
+  &_bonus
+    text-align: center
+    font-size: 3rem
+    line-height: 4rem
+    color: $orange
+    text-shadow: 0 0 10px #000000
+    @media screen and (max-width: $tablet)
+      width: 80%
+      font-size: 5rem
+      font-weight: 400
+      line-height: 6rem
+      margin-bottom: 3.5rem
+      @media screen and (max-width: $mobile)
+        font-size: 3rem
+        line-height: 4.5rem
+        margin-bottom: 1.5rem
+    span
+      font-weight: 700
+      font-size: 5.4rem
+      line-height: 6.2rem
+      text-shadow: 0 0 10px #000000
+      @media screen and (max-width: $tablet)
+        font-size: 7rem
+        line-height: 8rem
+        @media screen and (max-width: $mobile)
+          font-size: 3rem
+          line-height: 4.5rem
+          font-weight: 900
+  &_terms
+    @media screen and (max-width: $tablet)
+      margin-bottom: 5rem
+    a
+      font-size: 1.5rem
+      line-height: 1.8rem
+      font-weight: 400
+      color: #ffd99d
+      @media screen and (max-width: $tablet)
+        font-size: 2.5rem
+        line-height: 3.33rem
+      &:hover
+        color: #fff0d7
+    span
+      color: $orange
+      font-size: 1.5rem
+      line-height: 1.8rem
+      font-weight: 400
+      @media screen and (max-width: $tablet)
+        font-size: 2.5rem
+        line-height: 3.33rem
+  &_btn
+    width: 100%
+    a
+      font-weight: 700
+      height: 6.2rem
+      font-size: 3rem
+      line-height: 4rem
+      @media screen and (max-width: $tablet)
+        height: 60px
+        font-size: 6rem
+        line-height: 7rem
+        @media screen and (max-width: $mobile)
+          font-size: 5rem
+          line-height: 6rem
+

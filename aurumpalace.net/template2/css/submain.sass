@@ -1,0 +1,92 @@
+.sub_main
+  background-image: linear-gradient(to top, #000000, #26282d)
+  padding: 4rem 0 2rem
+  @media screen and (max-width: $tablet)
+    padding: 8rem 11rem
+    @media screen and (max-width: $mobile)
+      padding: 4rem 0
+  &_title
+    text-align: center
+    font-size: 3rem
+    font-weight: 400
+    line-height: 4rem
+    color: $customColor
+    margin-bottom: 2rem
+    @media screen and (max-width: $tablet)
+      margin-bottom: 5rem
+      font-size: 4rem
+      line-height: 5rem
+      @media screen and (max-width: $mobile)
+        font-size: 3rem
+        line-height: 4.5rem
+        margin: 3rem
+  &_item
+    display: flex
+    flex-direction: row
+    justify-content: center
+    margin-bottom: 2.5rem
+    @media screen and (max-width: $tablet)
+      flex-direction: column
+      align-items: center
+      margin-bottom: 5rem
+
+    &_text
+      display: flex
+      flex-direction: column
+      align-items: center
+    &_num
+      text-align: left
+      font-size: 3rem
+      font-weight: 900
+      line-height: 3rem
+      color: $customColor
+      @media screen and (max-width: $tablet)
+        font-size: 5rem
+        line-height: 6rem
+    &_title
+      width: 80%
+      text-align: center
+      font-size: 1.8rem
+      font-weight: 500
+      line-height: 2.7rem
+      color: $customColor
+      @media screen and (max-width: $tablet)
+        width: 100%
+        font-size: 4rem
+        line-height: 5rem
+  &_text
+    position: relative
+    text-align: center
+    padding-top: 1rem
+    margin-bottom: 1.5rem
+    &:after
+      position: absolute
+      height: 1px
+      width: 100%
+      content: ''
+      top: 0
+      left: 0
+      background-image: linear-gradient(to bottom, #ffd58f, #956832)
+    p
+      font-size: 1.2rem
+      line-height: 1.5rem
+      color: $customColor
+      opacity: 0.5
+      font-weight: 400
+      @media screen and (max-width: $tablet)
+        font-size: 2rem
+        line-height: 3rem
+  &_small_text
+    text-align: center
+    p
+      font-size: 0.9rem
+      line-height: 1.5rem
+      color: $customColor
+      opacity: 0.5
+      font-weight: 400
+      @media screen and (max-width: $tablet)
+        font-size: 1.5rem
+        line-height: 2rem
+
+
+
