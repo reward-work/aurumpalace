@@ -15,7 +15,11 @@
 
 
 
-Auth::routes();
+Auth::routes([
+    'register' => false,
+    'reset' => false,
+    'verify' => false
+]);
 
 
 Route::group(['prefix' => App\Http\Middleware\LocaleMiddleware::getLocale()], function(){
@@ -38,6 +42,11 @@ Route::group(['prefix' => App\Http\Middleware\LocaleMiddleware::getLocale()], fu
         Route::get('/languages', 'LanguagesController@index')->name('languages');
         Route::post('/languages/add', 'LanguagesController@create')->name('language_add');
         Route::get('/languages/destroy/{slug}', 'LanguagesController@delete')->name('languages_destroy');
+
+        Route::get('/users', 'UsersController@index')->name('users');
+
+        Route::post('/create-user', 'UsersController@create')->name('create-user');
+        Route::get('/user-destroy/{id}', 'UsersController@destroy')->name('user-destroy');
     });
 
 

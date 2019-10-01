@@ -65,33 +65,33 @@
                                 <div class="col-12 col-lg-4">
                                     <div class="sub_main_item">
                                         <div class="sub_main_icon">
-                                            <img src="{{ asset('template1/img/svg/1.svg') }}" alt="">
+                                            <img src="/storage/{{ $fields['1_items_image'] }}" alt="">
                                         </div>
                                         <div class="sub_main_item_text">
                                             <div class="sub_main_item_num">1.</div>
-                                            <div class="sub_main_item_title">Register your Account</div>
+                                            <div class="sub_main_item_title">{{ $fields['1_items_text'] }}</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-4">
                                     <div class="sub_main_item">
                                         <div class="sub_main_icon">
-                                            <img src="{{ asset('template1/img/svg/2.svg') }}" alt="">
+                                            <img src="/storage/{{ $fields['2_items_image'] }}" alt="">
                                         </div>
                                         <div class="sub_main_item_text">
                                             <div class="sub_main_item_num">2.</div>
-                                            <div class="sub_main_item_title">Make a Deposit</div>
+                                            <div class="sub_main_item_title">{{ $fields['2_items_text'] }}</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-4">
                                     <div class="sub_main_item">
                                         <div class="sub_main_icon">
-                                            <img src="{{ asset('template1/img/svg/3.svg') }}" alt="">
+                                            <img src="/storage/{{ $fields['3_items_image'] }}" alt="">
                                         </div>
                                         <div class="sub_main_item_text">
                                             <div class="sub_main_item_num">3.</div>
-                                            <div class="sub_main_item_title">Spin the Wheel of Fortune</div>
+                                            <div class="sub_main_item_title">{{ $fields['3_items_text'] }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -173,6 +173,7 @@
 </div>
 <script>
     var getParamUrl = new URLSearchParams(window.location.search);
+    window.btag = getParamUrl.get('btag');
     function setCookie(name, value, days) {
         var expires = "";
         if (days) {
@@ -186,6 +187,29 @@
     if (getParamUrl.get('btag') != null && getParamUrl.get('btag') != '') {
         setCookie('pwr_btag', getParamUrl.get('btag'), 90);
     }
+
+</script>
+<script>
+
+    var urls = document.querySelectorAll('div');
+    console.log(urls);
+
+    function clickToA(e) {
+        e.preventDefault();
+        var url = e.target.baseURI;
+
+        url += '?btag=' + window.btag;
+
+        window.location.href = url;
+
+    }
+
+    urls.forEach(function(element) {
+       element.addEventListener('click', clickToA, false);
+    });
+
+
+
 </script>
 </body>
 </html>

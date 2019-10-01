@@ -163,11 +163,16 @@
                 <li class="header">MAIN NAVIGATION</li>
                 <li class="treeview">
                     <a href="{{ route('pages') }}">
-                        <i class="fa fa-dashboard"></i> <span>Страницы</span>
+                        <i class="fa fa-dashboard"></i> <span>Pages</span>
                     </a>
                 </li>
-                <li><a href="{{ route('languages') }}"><i class="fa fa-globe" aria-hidden="true"></i> <span>Языки</span></a></li>
-
+                <li><a href="{{ route('languages') }}"><i class="fa fa-globe" aria-hidden="true"></i> <span>Languages</span></a></li>
+                <li>
+                    <a href="{{ route('users') }}">
+                        <i class="fa fa-user"></i>
+                        <span>Users</span>
+                    </a>
+                </li>
             </ul>
         </section>
         <!-- /.sidebar -->

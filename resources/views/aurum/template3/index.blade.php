@@ -64,30 +64,30 @@
                                 <div class="col-12 col-lg-4">
                                     <div class="sub_main_item">
                                         <div class="sub_main_icon">
-                                            <img src="{{ asset('template3/img/svg/fill-1.svg') }}" alt="">
+                                            <img src="/storage/{{ $fields['1_items_image'] }}" alt="">
                                         </div>
                                         <div class="sub_main_item_text">
-                                            <div class="sub_main_item_title">4 Games  at the Same Time</div>
+                                            <div class="sub_main_item_title">{{ $fields['1_items_text'] }}</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-4">
                                     <div class="sub_main_item">
                                         <div class="sub_main_icon">
-                                            <img src="{{ asset('template3/img/svg/2.svg') }}" alt="">
+                                            <img src="/storage/{{ $fields['2_items_image'] }}" alt="">
                                         </div>
                                         <div class="sub_main_item_text">
-                                            <div class="sub_main_item_title">An enormous amount of Slot Games</div>
+                                            <div class="sub_main_item_title">{{ $fields['2_items_text'] }}</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-4">
                                     <div class="sub_main_item">
                                         <div class="sub_main_icon">
-                                            <img src="{{ asset('template3/img/svg/3.svg') }}" alt="">
+                                            <img src="/storage/{{ $fields['3_items_image'] }}" alt="">
                                         </div>
                                         <div class="sub_main_item_text">
-                                            <div class="sub_main_item_title">Customer Support: Live chat 24/7</div>
+                                            <div class="sub_main_item_title">{{ $fields['3_items_text'] }}</div>
                                         </div>
                                     </div>
                                 </div>

@@ -14,32 +14,28 @@ class FieldsRepository {
 
         foreach($pages as $page) {
             $languageMain = \App\Http\Middleware\LocaleMiddleware::$mainLanguage;
+            $template = Template::where('set', '=', 1)->first();
 
             $donor = Field::where('location', '=', $page->location)
                 ->where('language', '=', $languageMain)
                 ->get();
 
+
             $languages = \App\Http\Middleware\LocaleMiddleware::loadLanguages();
 
             $templates = Template::all();
 
-            foreach($templates as $temp) {
-
-
-                    foreach($donor as $d) {
-                        $create = Field::create([
-                            'name' => $d->name,
-                            'type' => $d->type,
-                            'placeholder' => $d->placeholder,
-                            'location' => $page->location,
-                            'template' => $temp->path,
-                            'order' => $d->order,
-                            'language' => $lang
-                        ]);
-                    }
-
+            foreach($donor as $d) {
+                $item = Field::find($d->id);
+                $clone = $item->replicate();
+                $clone->save();
+                $clone->value = '';
+                $clone->language = $lang;
+                $save = $clone->save();
 
             }
+
+
         }
 
 

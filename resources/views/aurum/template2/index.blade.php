@@ -65,7 +65,7 @@
                                     <div class="sub_main_item">
                                         <div class="sub_main_item_text">
                                             <div class="sub_main_item_num">1.</div>
-                                            <div class="sub_main_item_title">Open your  Account</div>
+                                            <div class="sub_main_item_title">{{ $fields['1_items_text'] }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -73,7 +73,7 @@
                                     <div class="sub_main_item">
                                         <div class="sub_main_item_text">
                                             <div class="sub_main_item_num">2.</div>
-                                            <div class="sub_main_item_title">Make a Deposit</div>
+                                            <div class="sub_main_item_title">{{ $fields['2_items_text'] }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -81,7 +81,7 @@
                                     <div class="sub_main_item">
                                         <div class="sub_main_item_text">
                                             <div class="sub_main_item_num">3.</div>
-                                            <div class="sub_main_item_title">Win all the Gold of the AurumPalace</div>
+                                            <div class="sub_main_item_title">{{ $fields['3_items_text'] }}</div>
                                         </div>
                                     </div>
                                 </div>

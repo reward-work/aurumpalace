@@ -67,21 +67,21 @@
                                 <div class="col-12 col-lg-3">
                                     <div class="sub_main_item">
                                         <div class="sub_main_item_text">
-                                            <div class="sub_main_item_title">Are</div>
+                                            <div class="sub_main_item_title">{{ $fields['1_items_text'] }}</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-3">
                                     <div class="sub_main_item">
                                         <div class="sub_main_item_text">
-                                            <div class="sub_main_item_title">You</div>
+                                            <div class="sub_main_item_title">{{ $fields['2_items_text'] }}</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-3">
                                     <div class="sub_main_item">
                                         <div class="sub_main_item_text">
-                                            <div class="sub_main_item_title">Serious?</div>
+                                            <div class="sub_main_item_title">{{ $fields['3_items_text'] }}</div>
                                         </div>
                                     </div>
                                 </div>

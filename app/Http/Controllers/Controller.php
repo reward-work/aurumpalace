@@ -17,6 +17,7 @@ class Controller extends BaseController
 
     public function __construct()
     {
+
         // get currenct template
        $template = Template::where('set', '=', 1)->first();
        if($template) {
