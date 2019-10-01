@@ -43,7 +43,7 @@ class LanguagesController extends Controller
     public function delete($slug)
     {
         if($slug == \App\Http\Middleware\LocaleMiddleware::$mainLanguage) {
-            return back()->with('message_error', 'Is main language!')
+            return back()->with('message_error', 'Is main language!');
         }
 
         $delete = Language::where('slug', '=', $slug)->delete();

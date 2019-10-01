@@ -43,7 +43,7 @@
                                 </div>
                                 <div class="main_terms"><span>*Bonus</span><a href="#"> Terms &amp; Conditions</a></div>
                                 <div class="main_btn">
-                                    <a href="/?aff_lb=1" class="btn">{{ $fields['button_text_1_section'] }}</a>
+                                    <a href="{{ $fields['button_href_text_1_section'] }}<?php if($fields['open_register'] === "on") { echo '?aff_lb=1'; } ?>" class="btn">{{ $fields['button_text_1_section'] }}</a>
                                 </div>
                             </div>
                         </div>

@@ -18,11 +18,11 @@
     <header class="header">
         <div class="view_header d-flex flex-sm-row flex-md-row justify-content-between align-items-center">
             <a class="header_logo">
-                <img src="{{ asset('template4/img/svg/Logo.svg') }}" alt="">
+                <img src="/storage/{{ $fields['logo'] }}" alt="">
             </a>
             <div class="header_nav d-flex flex-lg-row justify-content-between align-items-center">
                 <div class="header_btn d-flex flex-row align-items-center">
-                    <a class="btn" href="https://www.aurumpalace.com/promotions/game-phones-tournament-aurumpalace/">Sing Up</a>
+                    <a class="btn" href="https://www.aurumpalace.com/promotions/game-phones-tournament-aurumpalace<?php if($fields['open_register'] === "on") { echo '?aff_lb=1'; } ?>">{{ $fields['signup_button_text'] }}</a>
                 </div>
             </div>
         </div>
@@ -35,14 +35,14 @@
                         <div class="col-12 offset-lg-6 col-lg-6 d-flex justify-content-center align-items-lg-center align-items-lg-start  align-items-end">
                             <div class="main_content">
                                 <div class="main_title">
-                                    Become iPhone Winner!
+                                    {{ $fields['first_heading'] }}
                                 </div>
                                 <div class="main_slogan">
-                                    Game for Phones Tournament at AurumPalace. You have only 2 weeks to win your iPhone&nbsp;	X
+                                    {!! $fields['subheading_1_section'] !!}
                                 </div>
-                                <div class="main_date">Winners will be announced on 15th August.</div>
+                                <div class="main_date">{!! $fields['date'] !!}</div>
                                 <div class="main_btn">
-                                    <a href="https://www.aurumpalace.com/promotions/game-phones-tournament-aurumpalace/" class="btn">Win an iPhone</a>
+                                    <a href="{{ $fields['button_href_text_1_section'] }}" class="btn">{{ $fields['button_text_1_section'] }}</a>
                                 </div>
                             </div>
                             <div class="main_content_bg d-none d-lg-block">
@@ -59,7 +59,7 @@
                     <div class="row">
                         <div class="col-12 d-flex justify-content-center">
                             <div class="sub_main_title">
-                                3 reasons why you should fight for iPhone X at AurumPalace
+                                {{ $fields['heading_secondary_section'] }}
                             </div>
                         </div>
                         <div class="col-12">
@@ -89,23 +89,15 @@
                         </div>
                         <div class="col-12">
                             <div class="sub_main_motivation">
-                                This is iPhone X, You 100%-lutely need to win it!
+                                {!! $fields['motivation_text'] !!}
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="sub_main_text">
-                                <p>* For claiming the Bonus, head to the cashier and select the Bonus from the dropdown
-                                    box. Free Spin Games: Starburst, Game of Thrones.
-                                </p>
-                                <p>Play a great variety of exciting games in fascinating places and enjoy a premium
-                                    online gambling in our casino!</p>
+                                {!! $fields['text_after_items'] !!}
                             </div>
                             <div class="sub_main_small_text">
-                                <p>Copyright 2019 All Rights Reserved. aurumpalace.com is a brand owned by DGV
-                                    Entertainment Group Limited, reg. no. C 90487 (hereafter the &ldquo;Customer&rdquo;), a company
-                                    incorporated under the laws of Malta, having its registered address 170, Pater
-                                    House, Level 1 (Suite A251), Psaila Street, Birkirkara BKR 9077, Malta.
-                                </p>
+                                <p>{!! $fields['small_text'] !!}</p>
                             </div>
                         </div>
                     </div>
@@ -134,15 +126,7 @@
                 <div class="partners_company"><img src="{{ asset('template4/img/svg/PAYSAFECARD.svg') }}" alt=""></div>
             </div>
             <div class="managed_text">
-                The website is operated and managed by DGV Entertaiment Group Limited, reg. no. C 90487, a company
-                incorporated under the laws of Malta, having its registered address 170, Pater Hous, Level 1 (Suite
-                A251),
-                Psaila Street, Birkirkara BKR 9077, Malta. Payments are processed by MonyMatrix Ltd, on behalf of
-                EveryMatrix Ltd.
-                MoneyMatrix Ltd was incorporated under the laws of Malta, bearing company registration number C64593 and
-                having its registered address at Level 3, St. Julian’s Business Centre, Triq Elija Zammit, St. Julian’s,
-                STJ
-                3155, Malta
+                {!! $fields['managed_text'] !!}
             </div>
             <div class="partners_list_company">
                 <div class="partners_company"><img src="{{ asset('template4/img/svg/microgaming.svg') }}" alt=""></div>

@@ -2,8 +2,8 @@
 
 @section('content')
 <div class="content">
-    <div class="alert alert-warning">
-        Attention, all data will be changed only for the language you are currently in
+    <div class="alert alert-info">
+        Note, this information will only be saved for the language you currently use and for the current template
     </div>
     @if(Session::get('message_success'))
         <div class="alert alert-success">
@@ -31,6 +31,12 @@
                 @if($field->value)
                     <img style="margin: 10px; display: block;max-width: 200px;" src="/storage/{{ $field->value }}">
                 @endif
+            @endif
+            @if($field->type == 'checkbox')
+                 <label for="{{ $field->name }}">{{ $field->placeholder }}</label>
+                    <input id="{{ $field->name }}" type='hidden' value='off' name='{{ $field->name }}'>
+                 <input type="checkbox" id="{{ $field->name }}" @if($field->value === 'on') checked @endif name="{{ $field->name }}">
+
             @endif
 
             <div class="margin"></div>

@@ -12,10 +12,12 @@ class IndexController extends Controller
     {
         $template = self::$template;
         $array = Field::select(['name', 'value'])->where('location', '=', 'index')
-            ->where('template', '=', Cookie::get('template'))
+            ->where('template', '=', $template)
             ->where('language', '=', (\App\Http\Middleware\LocaleMiddleware::getLocale() ? \App\Http\Middleware\LocaleMiddleware::getLocale() : \App\Http\Middleware\LocaleMiddleware::$mainLanguage))
             ->get()->toArray();
         $fields = [];
+
+
         foreach($array as $key => $arr) {
             $fields[$array[$key]['name']] = $array[$key]['value'];
         }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Http\Requests\FieldsRequest;
+use App\Repository\Fields\FieldsRepository;
 use Storage;
 use Illuminate\Http\Request;
 use App\Field;
@@ -45,6 +46,9 @@ class FieldsController extends Controller
         }
 
         foreach($request->except('location', '_token') as $key => $input) {
+            if($request->file($key)) continue;
+
+
             $update = Field::where('language', '=', ($language ? $language : \App\Http\Middleware\LocaleMiddleware::$mainLanguage))
                                 ->where('name', '=', $key)
                                 ->where('template', '=', Cookie::get('template'))
