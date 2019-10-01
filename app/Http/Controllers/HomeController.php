@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Template;
+use Illuminate\Support\Facades\Cookie;
+
 class HomeController extends Controller
 {
     /**
@@ -26,5 +28,12 @@ class HomeController extends Controller
         $templates = Template::all();
 
         return view('aurum.adminLTE.dashboard', compact('templates'));
+    }
+
+    public function set_template($template)
+    {
+        Cookie::queue('template',$template,36000000);
+
+        return back();
     }
 }

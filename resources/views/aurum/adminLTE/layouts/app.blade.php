@@ -51,6 +51,23 @@
                 <ul class="nav navbar-nav">
                     <!-- Messages: style can be found in dropdown.less-->
 
+                    <li class="dropdown notifications-menu" style="background-color: #f39c12 ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span>Template: </span>
+
+                            <span>
+                                {{ Cookie::get('template') }}
+                            </span>
+
+                        </a>
+                        <ul class="dropdown-menu">
+                            @foreach($templates as $template)
+                                <li><a href="{{ route('set-admin-template', ['template' => $template->path]) }}">{{ $template->name }}</a></li>
+                            @endforeach
+                        </ul>
+                    </li>
+
+
 
                     <li class="dropdown notifications-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -162,7 +179,7 @@
                         <i class="fa fa-dashboard"></i> <span>Страницы</span>
                     </a>
                 </li>
-                <li><a href="#"><i class="fa fa-sticky-note-o"></i> <span>Посты</span></a></li>
+                <li><a href="{{ route('languages') }}"><i class="fa fa-globe" aria-hidden="true"></i> <span>Языки</span></a></li>
                 <li><a href="#"><i class="fa fa-list-ul"></i> <span>Категории</span></a></li>
                 <li><a href="#"><i class="fa fa-tags"></i> <span>Теги</span></a></li>
                 <li>

@@ -30,6 +30,14 @@ Route::group(['prefix' => App\Http\Middleware\LocaleMiddleware::getLocale()], fu
         Route::get('/pages', 'PagesController@index')->name('pages');
         Route::get('/edit-fields/{location}', 'FieldsController@edit')->name('edit-fields');
         Route::post('/field-store', 'FieldsController@store')->name('field-store');
+
+        Route::get('/set-admin-template/{template}', 'HomeController@set_template')->name('set-admin-template');
+
+        // languages
+
+        Route::get('/languages', 'LanguagesController@index')->name('languages');
+        Route::post('/languages/add', 'LanguagesController@create')->name('language_add');
+        Route::get('/languages/destroy/{slug}', 'LanguagesController@delete')->name('languages_destroy');
     });
 
 

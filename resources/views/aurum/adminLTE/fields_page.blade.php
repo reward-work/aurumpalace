@@ -23,7 +23,7 @@
             @endif
             @if($field->type == 'textarea')
                 <label for="{{ $field->name }}">{{ $field->placeholder }}</label>
-                <textarea id="{{ $field->name }}" class="form-control" value="{{ $field->value }}" name="{{ $field->name }}" id="" cols="30" rows="10" placeholder="{{ $field->placeholder }}"></textarea>
+                <textarea id="{{ $field->name }}" class="form-control" name="{{ $field->name }}" id="" cols="30" rows="10" placeholder="{{ $field->placeholder }}">{{ $field->value }}</textarea>
             @endif
             @if($field->type == 'image')
                 <label for="File_{{ $field->name }}">Select {{ $field->placeholder }}</label>

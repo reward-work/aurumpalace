@@ -19,6 +19,9 @@ class EventServiceProvider extends ServiceProvider
             SendEmailVerificationNotification::class,
         ],
     ];
+    protected $subscribe = [
+        'App\Listeners\CreateFields',
+    ];
 
     /**
      * Register any events for your application.
@@ -31,4 +34,6 @@ class EventServiceProvider extends ServiceProvider
 
         //
     }
+
+
 }

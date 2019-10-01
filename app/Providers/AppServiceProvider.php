@@ -2,8 +2,9 @@
 
 namespace App\Providers;
 
+use App\Template;
 use Illuminate\Support\ServiceProvider;
-
+use View;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -23,6 +24,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $templates = Template::all();
+
+        View::share('templates', $templates);
     }
 }
