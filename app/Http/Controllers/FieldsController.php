@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 use App\Field;
 use Illuminate\Support\Facades\Cookie;
 use App\Http\Controllers\FileUploaderController;
+use Illuminate\Support\Str;
+use App\Page;
 class FieldsController extends Controller
 {
 
@@ -15,26 +17,35 @@ class FieldsController extends Controller
         if(!$location) {
             return back();
         }
+        $page = Page::where('location', '=', $location)->first();
 
         $fields = Field::where('location', '=', $location)
             ->where('language', '=', (\App\Http\Middleware\LocaleMiddleware::getLocale() ? \App\Http\Middleware\LocaleMiddleware::getLocale() : \App\Http\Middleware\LocaleMiddleware::$mainLanguage))
-            ->where('template', '=', Cookie::get('template'))
+
             ->orderBy('order', 'ASC')
             ->get();
-        return view('aurum.adminLTE.fields_page', compact('fields', 'location'));
+        return view('aurum.adminLTE.fields_page', compact('fields', 'location', 'page'));
     }
 
 
 
     public function store(FieldsRequest $request) {
         $language = \App\Http\Middleware\LocaleMiddleware::getLocale();
+        if($request->input('page_slug')) {
+            $slug = Str::slug($request->input('page_slug'), '-');
+            $pageSlug = Page::where('location', '=', $request->input('index'))->update(['slug' => $slug]);
+        }
+
+
+
+
         if($_FILES) {
             foreach($_FILES as $key => $file) {
                 if($request->hasFile($key)) {
                     $upload = FileUploaderController::upload($request->file($key));
                     $updateField = Field::where('language', '=', ($language ? $language : \App\Http\Middleware\LocaleMiddleware::$mainLanguage))
                         ->where('name', '=', $key)
-                        ->where('template', '=', Cookie::get('template'))
+                        ->where('location', '=', $request->input('index'))
                         ->update([
                             'value' => $upload
                         ]);
@@ -45,14 +56,14 @@ class FieldsController extends Controller
 
         }
 
-        foreach($request->except('location', '_token') as $key => $input) {
+        foreach($request->except('location', '_token', 'page_slug') as $key => $input) {
             if($request->file($key)) continue;
 
 
             $update = Field::where('language', '=', ($language ? $language : \App\Http\Middleware\LocaleMiddleware::$mainLanguage))
                                 ->where('name', '=', $key)
-                                ->where('template', '=', Cookie::get('template'))
-                                ->where('location', '=', $request->input('location'))
+
+                                ->where('location', '=', $request->input('index'))
                                 ->update([
                                     'value' => $input
                                 ]);

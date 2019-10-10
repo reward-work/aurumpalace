@@ -5,12 +5,27 @@
     <div class="alert alert-info">
         Note, this information will only be saved for the language you currently use and for the current template
     </div>
+
     @if(Session::get('message_success'))
         <div class="alert alert-success">
             {{ Session::get('message_success') }}
         </div>
     @endif
     <form method="POST" action="{{ route('field-store') }}" enctype="multipart/form-data">
+        <input type="hidden" name="index" value="{{ $location }}">
+        <div class="box">
+            <div class="box-body">
+                <h4>Url landing</h4>
+                <div class="row" style="display: flex; align-items: center;">
+                    <div class="col-lg-1">
+                        <span><?php echo $_SERVER['HTTP_HOST']; ?>/{{ (App\Http\Middleware\LocaleMiddleware::getLocale() ? App\Http\Middleware\LocaleMiddleware::getLocale() : 'en/') }} </span>
+                    </div>
+                    <div class="col-lg-9">
+                        <input style="margin-left: 20px;" value="{{ $page->slug }}" name="page_slug" type="text" class="form-control" placeholder="url">
+                    </div>
+                </div>
+            </div>
+        </div>
         {{ csrf_field() }}
         <input type="hidden" name="location" value="{{ $location }}">
         
@@ -23,7 +38,7 @@
             @endif
             @if($field->type == 'textarea')
                 <label for="{{ $field->name }}">{{ $field->placeholder }}</label>
-                <textarea id="{{ $field->name }}" class="form-control" name="{{ $field->name }}" id="" cols="30" rows="10" placeholder="{{ $field->placeholder }}">{{ $field->value }}</textarea>
+                <textarea id="{{ $field->name }}" class="tiny" class="form-control" name="{{ $field->name }}" id="" cols="30" rows="10" placeholder="{{ $field->placeholder }}">{{ $field->value }}</textarea>
             @endif
             @if($field->type == 'image')
                 <label for="File_{{ $field->name }}">Select {{ $field->placeholder }}</label>

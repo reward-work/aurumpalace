@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{ asset('assets/dist/css/AdminLTE.min.css') }}">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="{{ asset('css/tiny.skin.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/dist/css/skins/_all-skins.min.css') }}">
 
     <!-- HTML5 Shim and Respond.js') }} IE8 support of HTML5 elements and media queries -->
@@ -51,21 +52,7 @@
                 <ul class="nav navbar-nav">
                     <!-- Messages: style can be found in dropdown.less-->
 
-                    <li class="dropdown notifications-menu" style="background-color: #f39c12 ">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <span>Template: </span>
 
-                            <span>
-                                {{ Cookie::get('template') }}
-                            </span>
-
-                        </a>
-                        <ul class="dropdown-menu">
-                            @foreach($templates as $template)
-                                <li><a href="{{ route('set-admin-template', ['template' => $template->path]) }}">{{ $template->name }}</a></li>
-                            @endforeach
-                        </ul>
-                    </li>
 
 
 
@@ -195,9 +182,23 @@
     <!-- FastClick -->
     <script src="{{ asset('assets/plugins/fastclick/fastclick.js') }}"></script>
     <!-- AdminLTE App -->
+    <script src="{{ asset('js/tiny.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+
     <script src="{{ asset('assets/dist/js/app.min.js') }}"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="{{ asset('assets/dist/js/demo.js') }}"></script>
+    <script>
+        tinymce.init({
+            selector: '.tiny',  // change this value according to your HTML
+            plugins: "link ",
+            automatic_uploads: false,
+            height: 600,
+            toolbar: "table insertfile a11ycheck undo redo | bold italic | forecolor backcolor | template codesample | alignleft aligncenter alignright alignjustify | bullist numlist | link image tinydrive | fullscreen | fontselect | formatselect | styleselect | iframe | code | imagetools | media | responsivefilemanager | undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist checklist | forecolor backcolor casechange permanentpen formatpainter removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media pageembed template link anchor codesample | a11ycheck ltr rtl | showcomments addcomment",
+            extended_valid_elements: "iframe[src|frameborder|style|scrolling|class|width|height|name|align]",
+
+        });
+    </script>
 </body>
 
 <!-- Mirrored from almsaeedstudio.com/themes/AdminLTE/pages/examples/blank.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Dec 2016 15:13:35 GMT -->

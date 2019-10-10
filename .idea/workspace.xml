@@ -2,19 +2,579 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab5b72ab-cb87-4eeb-92ad-69953ec42a01" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/aurum/adminLTE/users.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repository/Helpers/MainHelpers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aurumpalace.net/css/tiny.skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aurumpalace.net/js/tiny.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/aurum/vendors/scripts.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/Fields/FieldsRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/Fields/FieldsRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FieldsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FieldsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/assets/dist/css/AdminLTE.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/assets/dist/css/AdminLTE.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/assets/dist/js/app.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/assets/dist/js/app.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/css/FiraSans.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/css/FiraSans.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/css/footer.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/css/footer.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/css/footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/css/footer.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/css/header.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/css/header.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/css/header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/css/header.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/css/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/css/main.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/css/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/css/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/css/submain.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/css/submain.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/css/submain.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/css/submain.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/css/submain.sass" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/css/submain.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-100.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-100.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-100.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-100.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-100.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-100.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-100.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-100.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-100.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-100.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-100italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-100italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-100italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-100italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-100italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-100italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-100italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-100italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-100italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-100italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-200.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-200.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-200.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-200.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-200.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-200.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-200.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-200.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-200.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-200.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-200italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-200italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-200italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-200italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-200italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-200italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-200italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-200italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-200italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-200italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-300.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-300.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-300.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-300.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-300.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-300.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-300.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-300.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-300.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-300.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-300italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-300italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-300italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-300italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-300italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-300italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-300italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-300italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-300italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-300italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-500.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-500.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-500.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-500.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-500.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-500.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-500.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-500.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-500.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-500.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-500italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-500italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-500italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-500italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-500italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-500italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-500italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-500italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-500italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-500italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-600.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-600.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-600.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-600.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-600.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-600.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-600.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-600.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-600.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-600.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-600italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-600italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-600italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-600italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-600italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-600italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-600italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-600italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-600italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-600italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-700.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-700.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-700.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-700.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-700.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-700.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-700.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-700.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-700.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-700.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-700italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-700italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-700italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-700italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-700italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-700italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-700italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-700italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-700italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-700italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-800.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-800.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-800.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-800.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-800.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-800.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-800.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-800.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-800.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-800.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-800italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-800italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-800italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-800italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-800italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-800italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-800italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-800italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-800italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-800italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-900.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-900.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-900.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-900.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-900.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-900.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-900.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-900.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-900.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-900italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-900italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-900italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-900italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-900italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-900italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-900italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-900italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-900italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-900italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/fonts/fira-sans-v9-latin-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/fonts/fira-sans-v9-latin-regular.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/bg@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/bg@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/fb_white.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/fb_white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/in_white.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/in_white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/mobile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/mobile.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/mobile@2x.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/mobile@2x.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/mobile@3x.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/mobile@3x.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/spincess.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/spincess.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/spincess@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/spincess@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/spincess@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/spincess@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/001-facebook.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/001-facebook.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/002-twitter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/002-twitter.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/003-instagram.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/003-instagram.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/18.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/18.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/ECOPAYZ.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/ECOPAYZ.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/Logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/Logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/MASTERCARD.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/MASTERCARD.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/NETELLER.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/NETELLER.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/PAYSAFECARD.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/PAYSAFECARD.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/TRUSTLY.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/TRUSTLY.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/VISA.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/VISA.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/asiagamin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/asiagamin.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/bancontact.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/bancontact.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/betgames.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/betgames.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/betsoft.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/betsoft.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/cashtocode.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/cashtocode.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/egt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/egt.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/endr.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/endr.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/epz.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/epz.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/evolution gaming.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/evolution_gaming.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/ezugi.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/ezugi.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/fb.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/fb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/gc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/gc.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/globalbet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/globalbet.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/gramatikplay.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/gramatikplay.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/habanero.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/habanero.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/ideal.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/ideal.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/instagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/instagram.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/isoftbet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/isoftbet.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/linked.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/linked.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/malta g.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/malta g.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/mga-logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/mga-logo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/mga-logo@2x.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/mga-logo@2x.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/mga-logo@3x.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/mga-logo@3x.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/microgaming.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/microgaming.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/nyx.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/nyx.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/omi.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/omi.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/playson.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/playson.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/pokerclas.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/pokerclas.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/portomaso.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/portomaso.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/pragmatic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/pragmatic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/progamin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/progamin.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/rgf.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/rgf.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/safety.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/safety.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/sepa.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/sepa.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/skrill.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/skrill.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/sofort.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/sofort.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/webmoney.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/webmoney.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/svg/zimplet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/svg/zimplet.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template1/img/tw_white.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing1/img/tw_white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/css/footer.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/css/footer.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/css/footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/css/footer.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/css/header.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/css/header.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/css/header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/css/header.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/css/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/css/main.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/css/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/css/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/css/submain.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/css/submain.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/css/submain.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/css/submain.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/css/submain.sass" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/css/submain.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-Black.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-Black.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-Black.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-Black.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-Black.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-Black.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-BlackItalic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-BlackItalic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-BlackItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-BlackItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-BlackItalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-BlackItalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-Bold.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-Bold.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-Bold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-Bold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-Bold.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-BoldItalic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-BoldItalic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-BoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-BoldItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-BoldItalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-BoldItalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-Italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-Italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-Italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-Italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-Italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-Italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-Light.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-Light.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-Light.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-Light.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-Light.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-Light.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-LightItalic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-LightItalic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-LightItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-LightItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-LightItalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-LightItalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-Medium.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-Medium.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-Medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-Medium.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-Medium.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-Medium.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-MediumItalic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-MediumItalic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-MediumItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-MediumItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro-MediumItalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro-MediumItalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamPro.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamPro.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamProNarrow-Bold.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamProNarrow-Bold.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamProNarrow-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamProNarrow-Bold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamProNarrow-Bold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamProNarrow-Bold.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamProNarrow-Medium.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamProNarrow-Medium.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamProNarrow-Medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamProNarrow-Medium.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/fonts/GothamProNarrow-Medium.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/fonts/GothamProNarrow-Medium.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/fb_white.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/fb_white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/golden-particles.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/golden-particles.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/golden-particles@2x.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/golden-particles@2x.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/golden-particles@3x.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/golden-particles@3x.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/in_white.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/in_white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/mobile-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/mobile-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/mobile-bg@2x.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/mobile-bg@2x.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/mobile-bg@3x.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/mobile-bg@3x.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/001-facebook.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/001-facebook.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/002-twitter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/002-twitter.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/003-instagram.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/003-instagram.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/18.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/18.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/ECOPAYZ.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/ECOPAYZ.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/Logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/Logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/MASTERCARD.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/MASTERCARD.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/NETELLER.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/NETELLER.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/PAYSAFECARD.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/PAYSAFECARD.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/TRUSTLY.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/TRUSTLY.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/VISA.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/VISA.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/asiagamin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/asiagamin.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/bancontact.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/bancontact.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/betgames.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/betgames.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/betsoft.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/betsoft.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/cashtocode.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/cashtocode.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/egt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/egt.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/endr.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/endr.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/epz.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/epz.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/evolution gaming.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/evolution_gaming.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/ezugi.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/ezugi.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/fb.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/fb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/gc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/gc.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/globalbet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/globalbet.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/gramatikplay.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/gramatikplay.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/habanero.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/habanero.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/ideal.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/ideal.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/instagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/instagram.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/isoftbet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/isoftbet.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/linked.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/linked.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/malta g.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/malta g.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/mga-logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/mga-logo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/mga-logo@2x.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/mga-logo@2x.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/mga-logo@3x.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/mga-logo@3x.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/microgaming.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/microgaming.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/nyx.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/nyx.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/omi.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/omi.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/playson.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/playson.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/pokerclas.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/pokerclas.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/portomaso.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/portomaso.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/pragmatic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/pragmatic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/progamin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/progamin.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/rgf.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/rgf.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/safety.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/safety.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/sepa.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/sepa.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/skrill.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/skrill.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/sofort.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/sofort.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/webmoney.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/webmoney.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/svg/zimplet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/zimplet.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template2/img/tw_white.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/tw_white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/css/Sans Sourse Pro.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/css/Sans Sourse Pro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/css/footer.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/css/footer.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/css/footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/css/footer.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/css/header.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/css/header.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/css/header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/css/header.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/css/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/css/main.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/css/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/css/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/css/submain.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/css/submain.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/css/submain.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/css/submain.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/css/submain.sass" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/css/submain.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-200.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-200.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-200.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-200.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-200.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-200.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-200.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-200.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-200.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-200.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-200italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-200italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-200italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-200italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-200italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-200italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-200italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-200italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-200italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-200italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-300.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-300.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-300.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-300.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-300.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-300.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-300.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-300.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-300.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-300.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-300italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-300italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-300italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-300italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-300italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-300italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-300italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-300italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-300italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-300italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-600.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-600.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-600.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-600.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-600.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-600.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-600.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-600.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-600.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-600.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-600italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-600italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-600italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-600italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-600italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-600italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-600italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-600italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-600italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-600italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-700.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-700.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-700.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-700.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-700.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-700.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-700.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-700.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-700.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-700.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-700italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-700italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-700italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-700italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-700italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-700italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-700italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-700italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-700italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-700italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-900.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-900.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-900.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-900.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-900.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-900.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-900.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-900.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-900.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-900italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-900italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-900italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-900italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-900italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-900italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-900italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-900italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-900italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-900italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/fonts/source-sans-pro-v13-latin-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/fonts/source-sans-pro-v13-latin-regular.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/4-screens-macbook.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/4-screens-macbook.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/4-screens-macbook@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/4-screens-macbook@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/4-screens-macbook@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/4-screens-macbook@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/fb_white.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/fb_white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/in_white.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/in_white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/001-facebook.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/001-facebook.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/002-twitter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/002-twitter.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/003-instagram.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/003-instagram.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/18.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/18.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/ECOPAYZ.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/ECOPAYZ.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/Logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/Logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/MASTERCARD.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/MASTERCARD.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/NETELLER.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/NETELLER.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/PAYSAFECARD.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/PAYSAFECARD.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/TRUSTLY.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/TRUSTLY.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/VISA.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/VISA.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/asiagamin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/asiagamin.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/bancontact.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/bancontact.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/betgames.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/betgames.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/betsoft.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/betsoft.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/cashtocode.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/cashtocode.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/egt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/egt.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/endr.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/endr.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/epz.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/epz.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/evolution gaming.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/evolution_gaming.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/ezugi.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/ezugi.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/fb.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/fb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/fill-1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing3/img/svg/fill-1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/gc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/gc.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/globalbet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/globalbet.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/gramatikplay.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/gramatikplay.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/habanero.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/habanero.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/ideal.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/ideal.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/instagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/instagram.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/isoftbet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/isoftbet.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/linked.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/linked.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/malta g.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/malta g.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/mga-logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/mga-logo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/mga-logo@2x.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/mga-logo@2x.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/mga-logo@3x.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/mga-logo@3x.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/microgaming.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/microgaming.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/nyx.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/nyx.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/omi.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/omi.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/playson.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/playson.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/pokerclas.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/pokerclas.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/portomaso.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/portomaso.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/pragmatic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/pragmatic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/progamin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/progamin.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/rgf.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/rgf.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/safety.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/safety.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/sepa.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/sepa.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/skrill.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/skrill.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/sofort.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/sofort.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/webmoney.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/webmoney.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/svg/zimplet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/zimplet.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template3/img/tw_white.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/tw_white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/css/Sans Sourse Pro.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/css/Sans Sourse Pro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/css/footer.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/css/footer.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/css/footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/css/footer.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/css/header.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/css/header.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/css/header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/css/header.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/css/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/css/main.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/css/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/css/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/css/submain.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/css/submain.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/css/submain.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/css/submain.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/css/submain.sass" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/css/submain.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/Trajan Pro.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/Trajan Pro.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/TrajanPro-Bold.otf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/TrajanPro-Bold.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/TrajanPro-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/TrajanPro-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/alfr_ho.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/alfr_ho.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/lato.css" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/lato.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latoblack.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latoblack.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latoblack.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latoblack.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latoblack.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latoblack.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latoblackitalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latoblackitalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latoblackitalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latoblackitalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latoblackitalic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latoblackitalic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latobold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latobold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latobold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latobold.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latobold.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latobold.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latobolditalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latobolditalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latobolditalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latobolditalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latobolditalic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latobolditalic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latohairline.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latohairline.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latohairline.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latohairline.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latohairline.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latohairline.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latohairlineitalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latohairlineitalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latohairlineitalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latohairlineitalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latohairlineitalic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latohairlineitalic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latoheavy.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latoheavy.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latoheavy.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latoheavy.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latoheavy.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latoheavy.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latoheavyitalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latoheavyitalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latoheavyitalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latoheavyitalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latoheavyitalic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latoheavyitalic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latoitalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latoitalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latoitalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latoitalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latoitalic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latoitalic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latolight.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latolight.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latolight.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latolight.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latolight.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latolight.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latolightitalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latolightitalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latolightitalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latolightitalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latolightitalic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latolightitalic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latomedium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latomedium.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latomedium.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latomedium.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latomedium.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latomedium.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latomediumitalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latomediumitalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latomediumitalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latomediumitalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latomediumitalic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latomediumitalic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latoregular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latoregular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latoregular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latoregular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latoregular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latoregular.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latosemibold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latosemibold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latosemibold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latosemibold.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latosemibold.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latosemibold.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latosemibolditalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latosemibolditalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latosemibolditalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latosemibolditalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latosemibolditalic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latosemibolditalic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latothin.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latothin.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latothin.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latothin.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latothin.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latothin.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latothinitalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latothinitalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latothinitalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latothinitalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/fonts/latothinitalic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/fonts/latothinitalic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/001-facebook.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/001-facebook.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/002-twitter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/002-twitter.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/003-instagram.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/svg/003-instagram.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/bg@2x.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/bg@2x.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/bg@3x.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/bg@3x.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/fb_white.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/fb_white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/got-texture-frame-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/got-texture-frame-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/got-texture-frame-1@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/got-texture-frame-1@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/got-texture-frame-1@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/got-texture-frame-1@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/in_white.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/in_white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/mobile-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/mobile-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/mobile-bg@2x.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/mobile-bg@2x.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/mobile-bg@3x.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__landing4/img/mobile-bg@3x.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/001-facebook.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/001-facebook.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/002-twitter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/002-twitter.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/003-instagram.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/003-instagram.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/18.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/18.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/ECOPAYZ.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/ECOPAYZ.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/Logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/Logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/MASTERCARD.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/MASTERCARD.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/NETELLER.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/NETELLER.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/PAYSAFECARD.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/PAYSAFECARD.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/TRUSTLY.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/TRUSTLY.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/VISA.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/VISA.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/asiagamin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/asiagamin.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/bancontact.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/bancontact.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/betgames.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/betgames.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/betsoft.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/betsoft.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/cashtocode.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/cashtocode.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/egt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/egt.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/endr.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/endr.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/epz.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/epz.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/evolution gaming.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/evolution_gaming.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/ezugi.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/ezugi.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/fb.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/fb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/gc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/gc.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/globalbet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/globalbet.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/gramatikplay.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/gramatikplay.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/habanero.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/habanero.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/ideal.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/ideal.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/instagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/instagram.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/isoftbet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/isoftbet.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/linked.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/linked.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/malta g.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/malta g.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/mga-logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/mga-logo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/mga-logo@2x.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/mga-logo@2x.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/mga-logo@3x.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/mga-logo@3x.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/microgaming.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/microgaming.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/nyx.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/nyx.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/omi.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/omi.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/playson.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/playson.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/pokerclas.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/pokerclas.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/portomaso.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/portomaso.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/pragmatic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/pragmatic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/progamin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/progamin.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/rgf.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/rgf.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/safety.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/safety.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/sepa.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/sepa.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/skrill.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/skrill.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/sofort.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/sofort.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/webmoney.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/webmoney.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/svg/zimplet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/svg/zimplet.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aurumpalace.net/template4/img/tw_white.png" beforeDir="false" afterPath="$PROJECT_DIR$/aurumpalace.net/__langind2/img/tw_white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/aurum/adminLTE/fields_page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/aurum/adminLTE/fields_page.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/aurum/adminLTE/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/aurum/adminLTE/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/aurum/template1/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/aurum/template1/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/aurum/template2/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/aurum/template2/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/aurum/template3/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/aurum/template3/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/aurum/template4/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/aurum/template4/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/aurum/adminLTE/pages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/aurum/adminLTE/pages.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/aurum/template1/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/aurum/template2/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/aurum/template3/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/aurum/template4/index.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -92,60 +652,60 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="artisan" value="1" />
-          <entry key="css" value="1" />
+          <entry key="css" value="4" />
           <entry key="env" value="3" />
-          <entry key="fields" value="16" />
+          <entry key="fields" value="20" />
           <entry key="gitignore" value="3" />
-          <entry key="html" value="1" />
-          <entry key="js" value="1" />
+          <entry key="html" value="2" />
+          <entry key="js" value="5" />
           <entry key="json" value="2" />
           <entry key="languages" value="7" />
-          <entry key="pages" value="3" />
-          <entry key="php" value="144" />
-          <entry key="sql" value="7" />
-          <entry key="templates" value="2" />
+          <entry key="pages" value="8" />
+          <entry key="php" value="202" />
+          <entry key="sql" value="12" />
+          <entry key="templates" value="3" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="3" />
-          <entry key="Blade" value="53" />
-          <entry key="CSS" value="1" />
-          <entry key="Database Element" value="28" />
-          <entry key="HTML" value="1" />
+          <entry key="Blade" value="95" />
+          <entry key="CSS" value="4" />
+          <entry key="Database Element" value="38" />
+          <entry key="HTML" value="2" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="1" />
-          <entry key="PHP" value="92" />
+          <entry key="JavaScript" value="5" />
+          <entry key="PHP" value="108" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="SQL" value="1" />
-          <entry key="Scratch" value="6" />
+          <entry key="Scratch" value="11" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cell" value="2821" />
-          <entry key="css" value="49" />
+          <entry key="cell" value="3016" />
+          <entry key="css" value="90" />
           <entry key="env" value="27" />
           <entry key="gitignore" value="10" />
-          <entry key="js" value="641" />
+          <entry key="js" value="858" />
           <entry key="json" value="1" />
-          <entry key="php" value="21185" />
-          <entry key="sql" value="154" />
+          <entry key="php" value="26698" />
+          <entry key="sql" value="185" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="27" />
-          <entry key="Blade" value="7272" />
-          <entry key="CSS" value="49" />
+          <entry key="Blade" value="10529" />
+          <entry key="CSS" value="90" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="641" />
-          <entry key="PHP" value="13913" />
+          <entry key="JavaScript" value="858" />
+          <entry key="PHP" value="16169" />
           <entry key="PLAIN_TEXT" value="10" />
           <entry key="SQL" value="132" />
-          <entry key="Scratch" value="2843" />
+          <entry key="Scratch" value="3069" />
         </counts>
       </usages-collector>
     </session>
@@ -153,82 +713,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/aurum/__landing4/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="48" column="66" selection-start-line="48" selection-start-column="66" selection-end-line="48" selection-end-column="66" />
-              <folding>
-                <element signature="e#7#389#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="431">
+              <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsersController.php">
+        <entry file="file://$PROJECT_DIR$/app/Repository/Helpers/MainHelpers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
-              <folding>
-                <element signature="e#40#53#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="534">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FieldsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="33" column="38" lean-forward="true" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-              <folding>
-                <element signature="e#33#50#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/aurum/adminLTE/users.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="77" column="80" selection-start-line="77" selection-start-column="80" selection-end-line="77" selection-end-column="80" />
-              <folding>
-                <element signature="e#850#870#0#HTML" expanded="true" />
-                <element signature="e#113#156#0#HTML" expanded="true" />
-                <element signature="e#192#211#0#HTML" expanded="true" />
-                <element signature="e#246#265#0#HTML" expanded="true" />
-                <element signature="e#745#788#0#HTML" expanded="true" />
-                <element signature="e#828#883#0#HTML" expanded="true" />
-                <element signature="e#724#743#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/aurum/adminLTE/layouts/app.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="170" column="39" selection-start-line="170" selection-start-column="39" selection-end-line="170" selection-end-column="44" />
+            <state relative-caret-position="26">
+              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -237,13 +743,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>src=&quot;img</find>
-      <find>rc=&quot;img</find>
-      <find>&quot; alt</find>
-      <find>URLSearchParams</find>
-      <find>assets/</find>
-      <find>js</find>
-      <find>jpg&quot;</find>
       <find>css&quot;</find>
       <find>{% static 'afflandings/af1</find>
       <find>mastercard</find>
@@ -256,6 +755,24 @@
       <find>options</find>
       <find>name</find>
       <find>date</find>
+      <find>1_items_image</find>
+      <find>template1</find>
+      <find>Locale</find>
+      <find>landing1</find>
+      <find>template2</find>
+      <find>template3</find>
+      <find>template4</find>
+      <find>__template4</find>
+      <find>__template2</find>
+      <find>__landing1</find>
+      <find>__template3</find>
+      <find>afflandings/af1/</find>
+      <find>lato</find>
+      <find>evolut</find>
+      <find>evol</find>
+      <find>partners_company</find>
+      <find>evo</find>
+      <find>link</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -270,31 +787,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/index.php" />
-        <option value="$PROJECT_DIR$/server.php" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/resources/views/aurum/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/aurum/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_09_29_194138_create_languages_table.php" />
-        <option value="$PROJECT_DIR$/app/Language.php" />
-        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_09_30_064327_create_templates_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/TemplateController.php" />
-        <option value="$PROJECT_DIR$/app/Template.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
-        <option value="$PROJECT_DIR$/aurumpalace.net/assets/dist/css/AdminLTE.min.css" />
         <option value="$PROJECT_DIR$/aurumpalace.net/assets/dist/js/demo.js" />
         <option value="$PROJECT_DIR$/aurumpalace.net/template1/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/LocaleMiddleware.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_09_30_080645_create_pages_table.php" />
         <option value="$PROJECT_DIR$/resources/views/aurum/adminLTE/dashboard.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" />
-        <option value="$PROJECT_DIR$/resources/views/aurum/adminLTE/pages.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_09_30_081908_create_fields_table.php" />
         <option value="$PROJECT_DIR$/config/database.php" />
         <option value="$PROJECT_DIR$/app/Field.php" />
         <option value="$PROJECT_DIR$/aurumpalace.net/index.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/LanguageRequest.php" />
         <option value="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Events/CreateLanguage.php" />
@@ -303,24 +806,38 @@
         <option value="$PROJECT_DIR$/app/Http/Requests/FieldsRequest.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/FileUploaderController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/LanguagesController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/FieldsController.php" />
-        <option value="$PROJECT_DIR$/resources/views/aurum/adminLTE/fields_page.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/resources/views/aurum/template2/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/aurum/template3/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/aurum/template4/index.blade.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a8d282dc-528d-44c0-ac24-bb7ce289d431/console_1.sql" />
         <option value="$PROJECT_DIR$/app/Repository/Fields/FieldsRepository.php" />
         <option value="$PROJECT_DIR$/resources/views/aurum/template1/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/aurum/adminLTE/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/aurum/adminLTE/users.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" />
         <option value="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a8d282dc-528d-44c0-ac24-bb7ce289d431/console_1.sql" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/FieldsController.php" />
+        <option value="$PROJECT_DIR$/resources/views/aurum/landing1/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/aurum/landing2/index.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/aurumpalace.net/assets/dist/css/AdminLTE.min.css" />
+        <option value="$PROJECT_DIR$/aurumpalace.net/assets/dist/js/app.min.js" />
+        <option value="$PROJECT_DIR$/app/Repository/Helpers/MainHelpers.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/resources/views/aurum/vendors/scripts.blade.php" />
+        <option value="$PROJECT_DIR$/aurumpalace.net/js/tiny.js" />
+        <option value="$PROJECT_DIR$/resources/views/aurum/adminLTE/fields_page.blade.php" />
+        <option value="$PROJECT_DIR$/aurumpalace.net/css/tiny.skin.css" />
+        <option value="$PROJECT_DIR$/resources/views/aurum/adminLTE/pages.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/aurum/__landing4/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/resources/views/aurum/adminLTE/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/aurum/__landing1/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/aurum/__landing2/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/aurum/__landing3/index.blade.php" />
       </list>
     </option>
   </component>
@@ -473,25 +990,6 @@
               <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
               <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Requests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Listeners" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Providers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -499,7 +997,70 @@
               <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="Fields" type="462c0819:PsiDirectoryNode" />
+              <item name="Helpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
+              <item name="aurumpalace.net" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
+              <item name="aurumpalace.net" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
+              <item name="aurumpalace.net" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
+              <item name="aurumpalace.net" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
+              <item name="aurumpalace.net" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="autolink" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
+              <item name="aurumpalace.net" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
+              <item name="aurumpalace.net" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="link" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
+              <item name="aurumpalace.net" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
+              <item name="aurumpalace.net" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="silver" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
@@ -518,6 +1079,38 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="aurum" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="aurum" type="462c0819:PsiDirectoryNode" />
+              <item name="__landing1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="aurum" type="462c0819:PsiDirectoryNode" />
+              <item name="__landing2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="aurum" type="462c0819:PsiDirectoryNode" />
+              <item name="__landing3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="aurum" type="462c0819:PsiDirectoryNode" />
+              <item name="__landing4" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
@@ -542,31 +1135,7 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="aurum" type="462c0819:PsiDirectoryNode" />
-              <item name="template1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="aurum" type="462c0819:PsiDirectoryNode" />
-              <item name="template2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="aurum" type="462c0819:PsiDirectoryNode" />
-              <item name="template3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aurum.net" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="aurum" type="462c0819:PsiDirectoryNode" />
-              <item name="template4" type="462c0819:PsiDirectoryNode" />
+              <item name="vendors" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aurum.net" type="b2602c69:ProjectViewProjectNode" />
@@ -597,7 +1166,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="D:/aff_db_fields.sql" />
+    <property name="last_opened_file_path" value="D:/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -608,6 +1177,7 @@
       <recent name="D:\OSPanel\domains\aurum.net\aurumpalace.net" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\OSPanel\domains\aurum.net\aurumpalace.net\js" />
       <recent name="D:\OSPanel\domains\aurum.net\aurumpalace.net\template1" />
       <recent name="D:\OSPanel\domains\aurum.net\aurumpalace.net" />
       <recent name="D:\OSPanel\domains\aurum.net\resources\views\aurum" />
@@ -638,24 +1208,24 @@
       <workItem from="1569687881048" duration="17841000" />
       <workItem from="1569752017072" duration="100000" />
       <workItem from="1569752500172" duration="155000" />
-      <workItem from="1569752689134" duration="55737000" />
+      <workItem from="1569752689134" duration="98650000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73833000" />
+    <option name="totallyTimeSpent" value="116746000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" sideWeight="0.49924356" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -666,7 +1236,7 @@
       <window_info anchor="bottom" id="File Transfer" order="9" weight="0.3207856" />
       <window_info anchor="bottom" id="Database Changes" order="10" sideWeight="0.49924356" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49924356" weight="0.31260228" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="12" sideWeight="0.50075644" side_tool="true" visible="true" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -705,196 +1275,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aurumpalace.net/assets/dist/css/AdminLTE.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aurumpalace.net/assets/dist/js/demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="357" column="38" selection-start-line="357" selection-start-column="38" selection-end-line="357" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#1;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#1;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#1;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#1;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#1;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#1;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#1;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#1;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#1;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#1;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#1;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#1;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TemplateController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="44" column="56" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
-          <folding>
-            <element signature="e#39#56#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aurumpalace.net/template1/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="206" lean-forward="true" selection-start-line="206" selection-end-line="206" />
-          <folding>
-            <element signature="e#2033#2039#0#HTML" expanded="true" />
-            <element signature="e#2049#2055#0#HTML" expanded="true" />
-            <element signature="e#2121#2127#0#HTML" expanded="true" />
-            <element signature="e#2272#2277#0#HTML" expanded="true" />
-            <element signature="e#6235#6242#0#HTML" expanded="true" />
-            <element signature="e#6250#6257#0#HTML" expanded="true" />
-            <element signature="e#13066#13072#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/aurum/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1291">
-          <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/LocaleMiddleware.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="21" column="40" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="40" />
-          <folding>
-            <element signature="e#39#51#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_30_080645_create_pages_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_30_064327_create_templates_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_30_081908_create_fields_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PagesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
           <caret line="62" column="50" selection-start-line="62" selection-start-column="50" selection-end-line="62" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/aurum/adminLTE/dashboard.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6422">
-          <caret line="247" lean-forward="true" selection-start-line="247" selection-end-line="247" />
         </state>
       </provider>
     </entry>
@@ -927,34 +1311,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/aurum/adminLTE/pages.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="46" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/EventServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://a8d282dc-528d-44c0-ac24-bb7ce289d431/schema/aff_db/table/pages">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1025,44 +1385,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FieldsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="e#39#75#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/aurum/adminLTE/fields_page.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="36" column="103" selection-start-line="36" selection-start-column="103" selection-end-line="36" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/aurum/template2/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="83" column="91" selection-start-line="83" selection-start-column="91" selection-end-line="83" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/aurum/template4/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/aurum/landing4/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="83" column="106" lean-forward="true" selection-start-line="83" selection-start-column="106" selection-end-line="83" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1083,31 +1409,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://a8d282dc-528d-44c0-ac24-bb7ce289d431/schema/aff_db/table/fields">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a8d282dc-528d-44c0-ac24-bb7ce289d431/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="100" column="251" selection-start-line="100" selection-start-column="251" selection-end-line="100" selection-end-column="251" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/aurum/template3/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/aurum/landing3/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
           <caret line="64" column="53" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/aurum/template1/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="175" column="42" selection-start-line="175" selection-start-column="42" selection-end-line="175" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -1141,23 +1446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/aurum/adminLTE/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="170" column="39" selection-start-line="170" selection-start-column="39" selection-end-line="170" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="48" column="66" selection-start-line="48" selection-start-column="66" selection-end-line="48" selection-end-column="66" />
-          <folding>
-            <element signature="e#7#389#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/aurum/adminLTE/users.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
@@ -1174,13 +1462,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsersController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
-          <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="260">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
@@ -1191,20 +1476,207 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="251">
+          <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
+          <folding>
+            <element signature="e#40#53#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="33" column="38" lean-forward="true" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+        <state relative-caret-position="650">
+          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
           <folding>
             <element signature="e#33#50#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/aurum/landing1/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="13" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/aurum/landing2/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" selection-start-line="10" selection-end-line="13" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+          <folding>
+            <element signature="e#7#389#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aurumpalace.net/assets/dist/css/AdminLTE.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aurumpalace.net/assets/dist/js/app.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a8d282dc-528d-44c0-ac24-bb7ce289d431/schema/aff_db/table/pages">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a8d282dc-528d-44c0-ac24-bb7ce289d431/schema/aff_db/table/templates">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <folding>
+            <element signature="e#40#53#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/afflandings/af2.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/aurum/vendors/scripts.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/aurum/adminLTE/dashboard.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1014">
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/aurum/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2519" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aurumpalace.net/js/tiny.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3318">
+          <caret line="8" column="421973" lean-forward="true" selection-start-line="8" selection-start-column="421973" selection-end-line="8" selection-end-column="421973" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aurumpalace.net/css/tiny.skin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/aurum/adminLTE/pages.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a8d282dc-528d-44c0-ac24-bb7ce289d431/schema/aff_db/table/fields">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="27" selection-start-line="27" selection-start-column="2" selection-end-line="43" selection-end-column="11" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a8d282dc-528d-44c0-ac24-bb7ce289d431/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/aurum/adminLTE/fields_page.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="61" />
+          <folding>
+            <element signature="e#1073#1099#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/aurum/adminLTE/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="193" column="27" selection-start-line="193" selection-start-column="27" selection-end-line="193" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/aurum/__landing3/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="42" column="85" selection-start-line="42" selection-start-column="85" selection-end-line="42" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/aurum/__landing2/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="42" column="85" selection-start-line="42" selection-start-column="85" selection-end-line="42" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/aurum/__landing1/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="43" column="85" lean-forward="true" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/aurum/__landing4/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repository/Helpers/MainHelpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FieldsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
         </state>
       </provider>
     </entry>

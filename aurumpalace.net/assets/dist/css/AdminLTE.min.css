@@ -12,3 +12,12 @@ td .fa:before{font-size: 20px !important; margin-left: 10px;}
     display: inline-block;
     display: none;
 }
+
+.hidden_text {
+    display: none;
+}
+
+
+.copy-link {
+    cursor: pointer;
+}

@@ -24,6 +24,7 @@ Auth::routes([
 
 Route::group(['prefix' => App\Http\Middleware\LocaleMiddleware::getLocale()], function(){
     Route::get('/', 'IndexController@index');
+
     Route::get('/home', 'HomeController@index')->name('home');
 
 
@@ -35,8 +36,7 @@ Route::group(['prefix' => App\Http\Middleware\LocaleMiddleware::getLocale()], fu
         Route::get('/edit-fields/{location}', 'FieldsController@edit')->name('edit-fields');
         Route::post('/field-store', 'FieldsController@store')->name('field-store');
 
-        Route::get('/set-admin-template/{template}', 'HomeController@set_template')->name('set-admin-template');
-
+       
         // languages
 
         Route::get('/languages', 'LanguagesController@index')->name('languages');
@@ -50,7 +50,7 @@ Route::group(['prefix' => App\Http\Middleware\LocaleMiddleware::getLocale()], fu
     });
 
 
-
+    Route::get('/{slug}', 'IndexController@index');
 
 
 });
