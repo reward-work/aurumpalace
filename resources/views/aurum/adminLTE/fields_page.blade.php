@@ -11,17 +11,32 @@
             {{ Session::get('message_success') }}
         </div>
     @endif
+    @if(Session::get('message_error'))
+        <div class="alert alert-danger">
+            {{ Session::get('message_error') }}
+        </div>
+    @endif
     <form method="POST" action="{{ route('field-store') }}" enctype="multipart/form-data">
         <input type="hidden" name="index" value="{{ $location }}">
         <div class="box">
             <div class="box-body">
-                <h4>Url landing</h4>
+
                 <div class="row" style="display: flex; align-items: center;">
-                    <div class="col-lg-1">
+                    <div class="col-lg-2">
                         <span><?php echo $_SERVER['HTTP_HOST']; ?>/{{ (App\Http\Middleware\LocaleMiddleware::getLocale() ? App\Http\Middleware\LocaleMiddleware::getLocale() : 'en/') }} </span>
                     </div>
-                    <div class="col-lg-9">
+                    <div class="col-lg-5">
                         <input style="margin-left: 20px;" value="{{ $page->slug }}" name="page_slug" type="text" class="form-control" placeholder="url">
+                    </div>
+                    <div class="col-lg-1">
+                        <span>Domain:</span>
+                    </div>
+                    <div class="col-lg-4">
+                        <select name="domain" class="form-control">
+                            @foreach($domains as $domain)
+                                <option @if($domain->name == $page->domain) selected @endif value="{{ $domain->name }}">{{ $domain->name }}</option>
+                            @endforeach
+                        </select>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+
+}
+@font-face {
+    font-family: "Avenir Regular";
+    src: url(../fonts/AvenirNextCyr-Regular.ttf);
+}
+@font-face {
+    font-family: "Avenir Bold";
+    src: url(../fonts/AvenirNextCyr-Bold.ttf);
+}
+body {
+    overflow-x: hidden;
+    background-image: url(../img/bg.png);
+    background-size: cover;
+}
+
+
+header {
+    padding: 40px 0;
+}
+
+.language-select {
+    display: inline-block;
+    margin-left: 40px;
+}
+.language-select button {
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    padding: 0;
+    vertical-align: text-bottom;
+}
+.language-select button:hover {
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+}
+
+
+.btn-sign-up {
+    border: 1px solid rgba(255,255,255, 0.2);
+    border-radius: 6px;
+    padding:13px 18px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: "Avenir Regular";
+    background: transparent
+}
+.btn-sign-up:hover {
+    background: #fff;
+    color: black;
+}
+.first-section {
+    min-height: 110vh;
+
+}
+.first-section {
+    padding-top: 100px;
+}
+
+.first-section h1 {
+    font-family: "Avenir Bold";
+    font-size: 46px;
+    line-height: 120%;
+    color: #fff;
+}
+.first-section p {
+    font-size: 18px;
+    line-height: 130%;
+    font-family: "Avenir Regular";
+    color: #fff;
+    display: block;
+    margin-top: 17px;
+}
+.btn-orange {
+    border-radius: 6px;
+    background: #FF800E;
+    color: #fff;
+    font-family: "Avenir Regular";
+    font-size: 14px;
+    line-height: 19px;
+    padding: 13px 18px;
+    padding-right: 61px;
+    background-image: url(../img/cube.png);
+    background-size: 34px 34px;
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+}
+.first-section .btn-orange {
+    margin-top: 32px;
+}
+footer {
+    padding-top: 88px;
+    background: linear-gradient(179.81deg, rgba(25, 50, 112, 0) 1.52%, rgba(0,0,0, 0.8) 85.58%);
+}
+.social_icons {
+    display: inline-block;
+    margin-left: 40px;
+    display: inline-flex;
+}
+.icon-item{
+    display: block;
+    height: 32px;
+    width: 32px;
+    padding: 9px;
+    background: rgba(0,5,33, 0.2);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+.icon-item img {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+.payments {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.payments img {
+    margin: 10px 20px;
+}
+.sm-block {
+    display: none;
+}
+footer p {
+    font-size: 8px;
+    line-height: 140%;
+    color: rgba(255,255,255, 0.5);
+    font-family: "Avenir Regular";
+    display: block;
+    text-align: center;
+}
+
+@media screen and (max-width: 769px) {
+    .language-select {
+        display: none;
+
+    }
+    .sm-start-flex {
+        justify-content: space-between !important;
+        align-items: center;
+    }
+    .sm-d-flex {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    .sm-d-flex img {
+        max-width: 120px;
+    }
+    body {
+        background-color: #327aff;
+        background-image: url(../img/mobile_bg.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+    .first-section h1 {
+        font-size: 28px;
+        line-height: 120%;
+    }
+    .first-section {
+        padding-top: 50px;
+    }
+    .sm-block {
+        display: block !important;
+        padding-right: 5px;
+    }
+    .first-section {
+        min-height: 80vh;
+    }
+    .logo-div {
+        display: flex;
+        align-items: center;
+    }
+    header .col-6:first-child {
+        display: flex;
+        align-items: center;
+    }
+    header img {
+        max-width: 150px;
+    }
+}

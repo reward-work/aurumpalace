@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Domain;
 use App\Http\Requests\FieldsRequest;
 use App\Repository\Fields\FieldsRepository;
 use Storage;
@@ -24,19 +25,31 @@ class FieldsController extends Controller
 
             ->orderBy('order', 'ASC')
             ->get();
-        return view('aurum.adminLTE.fields_page', compact('fields', 'location', 'page'));
+
+        $domains = Domain::all();
+
+
+        return view('aurum.adminLTE.fields_page', compact('domains', 'fields', 'location', 'page'));
     }
 
 
 
     public function store(FieldsRequest $request) {
+        if(!$request->input('domain')) {
+            return back()->with('message_error', 'Select domain please.');
+        }
+
         $language = \App\Http\Middleware\LocaleMiddleware::getLocale();
         if($request->input('page_slug')) {
             $slug = Str::slug($request->input('page_slug'), '-');
             $pageSlug = Page::where('location', '=', $request->input('index'))->update(['slug' => $slug]);
         }
-
-
+        if($request->input('index')) {
+            $page = Page::where('location', '=', $request->input('index'))->update(['domain' => $request->input('domain')]);
+            if(!$page) {
+                \Session::flush('message_error', 'Update domain error');
+            }
+        }
 
 
         if($_FILES) {

@@ -149,8 +149,13 @@
             <ul class="sidebar-menu">
                 <li class="header">MAIN NAVIGATION</li>
                 <li class="treeview">
-                    <a href="{{ route('pages') }}">
-                        <i class="fa fa-dashboard"></i> <span>Pages</span>
+                    <a href="{{ route('pages', ['domain' => 'aurumpalace']) }}">
+                        <i class="fa fa-dashboard"></i> <span>Pages Aurumpalace</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="{{ route('pages', ['domain' => 'flipperflip']) }}">
+                        <i class="fa fa-dashboard"></i> <span>Pages flipperflip</span>
                     </a>
                 </li>
                 <li><a href="{{ route('languages') }}"><i class="fa fa-globe" aria-hidden="true"></i> <span>Languages</span></a></li>

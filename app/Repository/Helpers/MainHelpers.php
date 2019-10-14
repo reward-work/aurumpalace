@@ -1,6 +1,8 @@
 <?php
 namespace App\Repository\Helpers;
 
+use App\Page;
+
 class MainHelpers {
     public static function getLinkOnPage($slug)
     {
@@ -50,6 +52,31 @@ class MainHelpers {
 
         return $url;
     }
+
+
+    public static function getDomainsForProject($domain){
+        $domains = [];
+        switch($domain) {
+            case 'aurumpalace':
+                $domains = [
+                    'aurumpalace.net',
+                    'aurum-palace.com',
+                    'aurumpalace.casino'
+                ];
+                break;
+            case 'flipperflip':
+                $domains = [
+                    'flipperflip.casino',
+                    'flipperflip.club',
+                    'flipperflip.net',
+                ];
+                break;
+
+        }
+
+        return $domains;
+    }
+
 }
 
 

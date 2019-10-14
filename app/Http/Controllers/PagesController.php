@@ -6,8 +6,9 @@ use Illuminate\Http\Request;
 use App\Page;
 class PagesController extends Controller
 {
-    public function index() {
-        $pages = Page::all();
+    public function index($domain) {
+        $pages = Page::where('domain', '=', $domain)->get();
+
         return view('aurum.adminLTE.pages', compact('pages'));
 
     }
