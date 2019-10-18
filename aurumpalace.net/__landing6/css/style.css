@@ -1,0 +1,757 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+
+}
+.first-section .container {
+    position: relative;
+    z-index: 9999;
+}
+@font-face {
+    font-family: "Avenir Regular";
+    src: url(../fonts/AvenirNextCyr-Regular.ttf);
+}
+@font-face {
+    font-family: "Avenir Bold";
+    src: url(../fonts/AvenirNextCyr-Bold.ttf);
+}
+body {
+
+    overflow-x: hidden;
+    background-image: url(../img/bg.png);
+    background-size: 100% auto;
+    background-color: #000;
+    background-repeat: no-repeat;
+}
+
+
+header {
+    padding: 40px 0;
+}
+
+.language-select {
+    display: inline-block;
+    margin-left: 40px;
+}
+.language-select button {
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    padding: 0;
+    vertical-align: text-bottom;
+}
+.language-select button:hover {
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.roulette {
+    position: absolute;
+    top: 322px;
+    right: 518px;
+    z-index: 3;
+}
+.boat {
+    position: absolute;
+    top: 76px;
+    z-index: 2;
+    right: 142px;
+}
+
+
+.btn-sign-up {
+    border: 1px solid rgba(255,255,255, 0.2);
+    border-radius: 6px;
+    padding:13px 18px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: "Avenir Regular";
+    background: transparent
+}
+.btn-sign-up:hover {
+    background: #fff;
+    color: black;
+}
+.first-section {
+    min-height: 85vh;
+
+}
+.first-section {
+    position: relative;
+    padding-top: 100px;
+}
+@media screen and (max-width: 1900px) {
+    .boat {
+        position: absolute;
+        top: 40px;
+        z-index: 2;
+        right: 97px;
+    }
+    .roulette {
+        position: absolute;
+        top: 284px;
+        right: 470px;
+        z-index: 3;
+    }
+    .bubbles-1 {
+
+        bottom: 270px !important;
+    }
+    .bubbles-2 {
+        bottom: 346px !important;
+        bottom: 214px !important;
+    }
+}
+@media screen and (max-width: 1616px) {
+    .roulette {
+        position: absolute;
+        top: 248px;
+        right: 379px;
+        z-index: 3;
+    }
+    .bubbles-1 {
+        bottom: 310px !important;
+    }
+    .bubbles-2 {
+        bottom: 390px !important;
+    }
+}
+.wave {
+    position: absolute;
+    top: 306px;
+    width: 100%;
+    z-index: 5;
+}
+.wave  img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+    .wave {
+        top: 342px
+    }
+}
+@media screen and (max-width: 1150px) {
+    .wave {
+        top: 355px
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .wave {
+        top: 367px
+    }
+}
+
+@keyframes rotate_roulette {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.roulette {
+    animation: 6s linear 0s normal none infinite running rotate_roulette;
+}
+@media screen and (max-width: 1616px) {
+    .roulette img {
+        height: 212px;
+        width: 214px;
+
+    }
+    .boat {
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .wave {
+        z-index: 5;
+    }
+    .bubble-1 {
+        bottom: 373px !important
+    }
+
+    .boat {
+        position: absolute;
+        top: 0;
+        right: -71px;
+    }
+    .roulette {
+        right: 309px;
+    }
+    .first-section .container {
+        position: relative;
+        z-index: 999;
+    }
+}
+
+@media screen and (max-width: 915px) {
+    .boat img {
+        height: 450px;
+    }
+    .boat {
+        position: absolute;
+        top: 103px;
+        right: -10px;
+    }
+    .roulette {
+        right: 290px;
+        top: 301px;
+    }
+    .roulette img {
+        height: 158px;
+        width: 158px;
+    }
+}
+@media screen and (max-width: 875px) {
+    .roulette {
+        right: 241px;
+        top: 301px;
+    }
+    .boat {
+        right: -58px;
+    }
+}
+.first-section h1 {
+    font-family: "Avenir Bold";
+    font-size: 46px;
+    line-height: 120%;
+    color: #fff;
+}
+.first-section p {
+    font-size: 18px;
+    line-height: 130%;
+    font-family: "Avenir Regular";
+    color: #fff;
+    display: block;
+    margin-top: 17px;
+}
+.btn-orange {
+    border-radius: 6px;
+    background: #FF800E;
+    color: #fff;
+    font-family: "Avenir Regular";
+    font-size: 14px;
+    line-height: 19px;
+    padding: 13px 18px;
+    padding-right: 61px;
+    background-image: url(../img/cube.png);
+    background-size: 34px 34px;
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+}
+.first-section .btn-orange {
+    margin-top: 32px;
+}
+footer {
+
+    background: linear-gradient(179.81deg, rgba(25, 50, 112, 0) 1.52%, rgba(0,0,0, 0.8) 85.58%);
+}
+@media screen and (max-width: 1440px) {
+    footer {
+        padding-top: 88px;
+    }
+}
+.social_icons {
+    display: inline-block;
+    margin-left: 40px;
+    display: inline-flex;
+}
+.icon-item{
+    display: block;
+    height: 32px;
+    width: 32px;
+    padding: 9px;
+    background: rgba(0,5,33, 0.2);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+.icon-item img {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+.payments {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.payments img {
+    margin: 5px 20px;
+}
+.sm-block {
+    display: none;
+}
+footer p {
+    font-size: 8px;
+    line-height: 140%;
+    color: rgba(255,255,255, 0.5);
+    font-family: "Avenir Regular";
+    display: block;
+    text-align: center;
+}
+.show-560 {
+    display: none;
+}
+@media screen and (max-width: 769px) {
+    .language-select {
+        display: none;
+
+    }
+    .sm-start-flex {
+        justify-content: space-between !important;
+        align-items: center;
+    }
+    .sm-d-flex {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    .sm-d-flex img {
+        max-width: 120px;
+    }
+    body {
+        overflow-x: hidden;
+
+        background-color: #000;
+        background-size: 173% 100%;
+        background-repeat: no-repeat;
+    }
+    .first-section {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .first-section h1 {
+        font-size: 28px;
+        line-height: 120%;
+    }
+    .first-section {
+        padding-top: 50px;
+    }
+    .sm-block {
+        display: block !important;
+        padding-right: 5px;
+    }
+    .first-section {
+        min-height: 80vh;
+    }
+    .logo-div {
+        display: flex;
+        align-items: center;
+    }
+    header .col-6:first-child {
+        display: flex;
+        align-items: center;
+    }
+    header img {
+        max-width: 150px;
+    }
+    .boat img {
+        height: 370px;
+    }
+    .boat {
+        top: 160px
+    }
+    .roulette {
+        right: 190px;
+        top: 321px;
+    }
+    .roulette img {
+        height: 130px;
+        width: 130px;
+    }
+    .wave {
+        top: 385px
+    }
+}
+
+
+@media screen and (max-width: 760px) {
+    body {
+        background-size: 210% 100%;
+        background-repeat: no-repeat;
+    }
+    .wave {
+        top: 410px
+    }
+}
+
+
+@media screen and (max-width: 560px) {
+    .show-560 {
+        display: block;
+    }
+    .hide-560{
+        display: none;
+    }
+    .first-section {
+        padding-top: 0;
+    }
+    .boat img {
+        height: 330px;
+    }
+    .roulette {
+        right: 163px;
+        top: 306px;
+    }
+    .roulette img {
+        height: 117px;
+        width: 117px;
+    }
+    .wave {
+        top: 329px
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wave {
+        top: 347px
+    }
+    .boat {
+        top: 195px
+    }
+    body {
+        background-size: 270% 100%;
+    }
+    .roulette {
+        top: 340px
+    }
+    .wave {
+        top: 391px
+    }
+    .first-section {
+        min-height: 83vh;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .wave {
+        top: 401px
+    }
+    .first-section .btn-orange {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .boat {
+        right: -111px;
+    }
+    body {
+        background-size: 570% 100%;
+    }
+    .roulette {
+        right: 108px;
+    }
+    .wave {
+        top: 407px;
+    }
+}
+
+
+
+/* bubbles */
+
+
+.bubble-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #333;
+}
+
+.bubble-toggle:hover {
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.bubbles {
+    position: absolute;
+    overflow: visible;
+    width: 180px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.bubbles-1 {
+    left: -150px;
+    bottom: -100px;
+    width: 200px;
+}
+
+.bubbles-2 {
+    right: -140px;
+    bottom: -55px;
+}
+
+.bubble-container {
+    position: absolute;
+    bottom: 0;
+    will-change: transform;
+    -webkit-animation: bubblerise 4s infinite ease-in;
+    -moz-animation: bubblerise 4s infinite ease-in;
+    -ms-animation: bubblerise 4s infinite ease-in;
+    animation: bubblerise 6s infinite ease-in;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+}
+
+.bubble {
+    width: 6px;
+    height: 6px;
+    margin: 0 auto;
+    /* border: 1px solid rgba(255, 255, 255, 0.5); */
+    background: url(https://affpalace.com/wp-content/themes/affpalace/assets/img/bubble.png);
+    background-size: 100% 100%;
+    will-change: transform;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-animation: bubblewobble 0.4s infinite linear;
+    -moz-animation: bubblewobble 0.4s infinite linear;
+    -ms-animation: bubblewobble 0.4s infinite linear;
+    animation: bubblewobble 0.4s infinite linear;
+}
+
+
+
+
+@-webkit-keyframes bubblerise {
+    0% {
+        bottom: 0;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        opacity: 0;
+    }
+
+    5% {
+        bottom: 0;
+        filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+        opacity: 1;
+    }
+
+    99% {
+        filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+        opacity: 1;
+    }
+
+    100% {
+        bottom: 100%;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes bubblerise {
+    0% {
+        bottom: 0;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        opacity: 0;
+    }
+
+    5% {
+        bottom: 0;
+        filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+        opacity: 1;
+    }
+
+    99% {
+        filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+        opacity: 1;
+    }
+
+    100% {
+        bottom: 100%;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes bubblerise {
+    0% {
+        bottom: 0;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        opacity: 0;
+    }
+
+    5% {
+        bottom: 0;
+        filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+        opacity: 1;
+    }
+
+    99% {
+        filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+        opacity: 1;
+    }
+
+    100% {
+        bottom: 100%;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        opacity: 0;
+    }
+}
+
+@keyframes bubblerise {
+    0% {
+        bottom: 0;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        opacity: 0;
+    }
+
+    5% {
+        bottom: 0;
+        filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+        opacity: 0.1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    99% {
+        filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 100%;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes bubblewobble {
+    0% {
+        margin-left: 0;
+    }
+
+    50% {
+        margin-left: 0;
+    }
+}
+
+@-moz-keyframes bubblewobble {
+    0% {
+        margin-left: 0;
+    }
+
+    50% {
+        margin-left: 0;
+    }
+}
+
+@-ms-keyframes bubblewobble {
+    0% {
+        margin-left: 0;
+    }
+
+    50% {
+        margin-left: 0;
+    }
+}
+
+@keyframes bubblewobble {
+    0% {
+        margin-left: 0;
+    }
+
+    50% {
+        margin-left: 0.2px;
+    }
+}
+
+.bubbles-1 {
+    left: 29%;
+    bottom: 218px;
+    width: 200px;
+    z-index: 1;
+}
+
+.bubbles-2 {
+    right: 0;
+    bottom: 272px;
+    width: 300px;
+    z-index: 3;
+}
+.bubbles-1 {
+    width: 400px;
+}
+
+@media screen and (max-width: 900px) {
+    .bubbles-1 {
+        bottom: 400px !important;
+    }
+}
+
+.first-section {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 768px) {
+    .bubbles-1 {
+        width: 400px;
+        bottom: 228px !important;
+        left: 0;
+    }
+    .bubbles-2 {
+        bottom: 182px !important;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .bubbles-1 {
+        width: 400px;
+        bottom: 228px !important;
+        left: 0;
+
+    }
+    .bubbles-2 {
+        bottom: 74px !important;
+    }
+}
+
+@media screen and (min-height: 1024px) {
+    .first-section {
+        min-height: 50vh;
+    }
+}
+
+.bubbles, .bubbles-1, .bubbles-2 {
+    bottom: 183px !important;
+}
+.wave .hide-560 {
+    z-index: 99;
+    position: relative;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .bubbles, .bubbles-1, .bubbles-2 {
+        bottom: 140px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bubbles, .bubbles-1, .bubbles-2 {
+        bottom: 110px !important;
+    }
+}

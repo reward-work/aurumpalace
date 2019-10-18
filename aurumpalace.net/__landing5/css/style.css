@@ -17,6 +17,10 @@ body {
     overflow-x: hidden;
     background-image: url(../img/bg.png);
     background-size: cover;
+    background-size: 100% auto;
+
+    background-color: #327aff;
+    background-repeat: no-repeat;
 }
 
 
@@ -57,7 +61,7 @@ header {
     color: black;
 }
 .first-section {
-    min-height: 110vh;
+    min-height: 100vh;
 
 }
 .first-section {
@@ -129,7 +133,7 @@ footer {
 
 }
 .payments img {
-    margin: 10px 20px;
+    margin: 3px 20px;
 }
 .sm-block {
     display: none;

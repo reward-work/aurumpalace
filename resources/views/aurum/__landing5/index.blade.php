@@ -16,7 +16,7 @@
     <div class="container">
         <div class="row">
             <div class="col-6" class="logo-div">
-                <a href="/"><img src="{{ asset('__landing5/img/logo.png') }}" alt=""></a>
+                <a href="/"><img src="/storage/{{ $fields['logo'] }}" alt=""></a>
                 <div class="dropdown language-select">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         En
@@ -30,7 +30,7 @@
             </div>
             <div class="col-6 d-flex justify-content-end">
                 <button class="btn btn-sign-up">
-                    Sign up
+                    {{ $fields['signup_button_text'] }}
                 </button>
             </div>
         </div>
@@ -40,12 +40,12 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>Grab our Welcome<br> Package NOW</h1>
+                <h1>{!! $fields['first_heading'] !!}</h1>
 
-                <p>Get 100% Bonus up to €500 + 50 Free Spins</p>
-                <button class="btn btn-orange">
-                    Sign up
-                </button>
+                <p>{!! $fields['subheading_1_section'] !!}</p>
+                <a style="text-decoration: none;" href="{{ $fields['button_href_text_1_section'] }}<?php if($fields['open_register'] === "on") { echo '?aff_lb=1'; } ?>" class="btn btn-orange">
+                   {!! $fields['button_text_1_section'] !!}
+                </a>
             </div>
         </div>
     </div>
@@ -72,9 +72,9 @@
 
             </div>
             <div class="col-12 col-xl-6 col-lg-6 col-md-4 col-sm-12 d-flex justify-content-end sm-start-flex">
-                <button class="btn btn-sign-up">
-                    Terms & Conditions
-                </button>
+                <a href="{{ $fields['terms_url'] }}" style="text-decoration: none;" class="btn btn-sign-up">
+                    {!! $fields['terms_text'] !!}
+                </a>
                 <div class="dropdown language-select sm-block">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         En
@@ -107,7 +107,7 @@
                     <img src="{{ asset('__landing5/img/payments/image.png') }}" alt="">
                 </div>
                 <p>
-                    The website is operated and managed by DGV Entertainment Group Limited, reg. no. C 90487, a company incorporated under the laws of Malta, having its registered address 170, Pater House, Level 1 (Suite A251), Psaila Street, Birkirkara BKR 9077, Malta. Payments are processed by MoneyMatrix Ltd, on behalf of EveryMatrix Ltd. MoneyMatrix Ltd was incorporated under the laws of Malta, bearing company registration number C64593 and having its registered address at Level 3, St. Julian’s Business Centre, Triq Elija Zammit, St. Julian’s, STJ 3155, Malta
+                    {!! $fields['text_after_payments'] !!}
                 </p>
                 <div class="payments">
                     <img src="{{ asset('__landing5/img/partners/image_2.1.png') }}" alt="">
@@ -135,11 +135,7 @@
                     <img src="{{ asset('__landing5/img/partners/image_26.png') }}" alt="">
                 </div>
                 <p>
-                    For claiming the Bonus, head to the cashier and select the Bonus from the dropdown box.<br>
-                    Free Spin Games: Aloha<br>
-                    Play a great variety of exciting games in fascinating places and enjoy a premium online gambling in our casino!
-                    <br><br>
-                    Copyright 2019 - All Rights Reserved. flipperflip.com is a brand owned by DGV Entertainment Group Limited, reg. no. C 90487 (hereafter the “Customer”), a company incorporated under the laws of Malta, having its registered address 170, Pater House, Level 1 (Suite A251), Psaila Street, Birkirkara BKR 9077, Malta.
+                    {!! $fields['text_after_partners'] !!}
                 </p>
             </div>
         </div>

@@ -15,6 +15,8 @@ class FieldsController extends Controller
 {
 
     public function edit($location) {
+
+
         if(!$location) {
             return back();
         }
