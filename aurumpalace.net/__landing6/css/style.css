@@ -543,12 +543,16 @@ footer p {
     5% {
         bottom: 0;
         filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+        opacity: 0.1;
+    }
+
+    30% {
         opacity: 1;
     }
 
     99% {
         filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-        opacity: 1;
+        opacity: 0;
     }
 
     100% {
@@ -568,12 +572,16 @@ footer p {
     5% {
         bottom: 0;
         filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+        opacity: 0.1;
+    }
+
+    30% {
         opacity: 1;
     }
 
     99% {
         filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-        opacity: 1;
+        opacity: 0;
     }
 
     100% {
@@ -593,12 +601,16 @@ footer p {
     5% {
         bottom: 0;
         filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+        opacity: 0.1;
+    }
+
+    30% {
         opacity: 1;
     }
 
     99% {
         filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-        opacity: 1;
+        opacity: 0;
     }
 
     100% {
@@ -643,7 +655,7 @@ footer p {
     }
 
     50% {
-        margin-left: 0;
+        margin-left: 0.2px;
     }
 }
 
@@ -653,7 +665,7 @@ footer p {
     }
 
     50% {
-        margin-left: 0;
+        margin-left: 0.2px;
     }
 }
 
@@ -663,7 +675,7 @@ footer p {
     }
 
     50% {
-        margin-left: 0;
+        margin-left: 0.2px;
     }
 }
 

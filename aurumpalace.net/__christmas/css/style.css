@@ -1,0 +1,564 @@
+@font-face {
+  font-family: "Avenir Next";
+  src: url(../fonts/AvenirNextCyr-Regular.ttf);
+  font-weight: normal;
+}
+
+
+@font-face {
+  font-family: "Avenir Next Bold";
+  src: url(../fonts/AvenirNextCyr-Bold.ttf);
+  font-weight: bold;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #fff;
+  font-family: "Avenir Next";
+}
+
+
+@keyframes star{
+  0% {
+    fill: #c5c5c5;
+  }
+
+  50% {
+
+    fill: yellow;
+
+  }
+  100% {
+    fill: #c5c5c5;
+  }
+}
+
+@keyframes filter {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+
+  }
+}
+@keyframes flood {
+  0% {
+    flood-opacity: 0;
+  }
+  50% {
+    flood-opacity: 1;
+  }
+  100% {
+    flood-opacity: 0;
+  }
+}
+
+#flood {
+  animation: 1s infinite flood
+}
+
+
+#filter {
+  opacity: 0;
+  animation: 1s infinite filter;
+}
+@keyframes island {
+  0% {
+    transform: initial;
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: initial
+  }
+}
+
+
+#island {
+  animation: 4s infinite island;
+  position: absolute;
+  right: 0;
+  top: 167px
+}
+#garland {
+  transition: 0.4s;
+  filter: url(#filter);
+  animation: 1s star infinite;
+}
+.filling {
+
+}
+.flipper {
+  animation: 4s infinite alternate island;
+  top: 210px;
+  right: 300px;
+  position: absolute;
+  z-index: 2;
+  height: 486px;
+  width: 583px;
+}
+#garland-wrapp {
+  animation: 1s infinite bulb;
+  position: absolute;
+  right: 0;
+  top: 156px;
+  right: 177px;
+}
+path {
+  transition: fill 0.1s;
+}
+.flurry-container span {
+  background: url(../img/sn.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 9999999999;
+}
+.flurry-container {
+  z-index: 99999999999
+}
+
+body {
+  background: url(../img/bg1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+
+
+header {
+  width: 100%;
+  padding: 42px 0;
+}
+.logo {
+  width: 192px;
+  height: 48px
+}
+.header .dropdown {
+  margin-left: 45px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.btn {
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255, 0.2);
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn:hover {
+  background: #FF800E;
+  border-color: #FF800E;
+}
+.btn-primary {
+  padding: 12px 18px;
+  background: transparent;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 46px;
+  line-height: 120%;
+  margin-bottom: 16px;
+  font-family: "Avenir Next Bold";
+
+}
+.first-section h6 {
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 10px;
+  font-weight: 500;
+  margin-top: 87px;
+}
+
+.first-section p {
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: 500;
+
+}
+
+.first-section {
+  position: relative;
+  z-index: 99999;
+}
+.btn-orange {
+  padding: 5px;
+  background: #FF800E;
+  font-weight: 600;
+  padding-left: 18px;
+  color: #fff;
+}
+.btn-orange:hover {
+  color:#fff;
+  opacity: 0.9;
+  transition: 0.2s;
+}
+.btn-orange img {
+  margin-left: 18px;
+}
+
+.first-section .btn-orange {
+  margin-top: 32px;
+}
+
+
+
+footer {
+    padding-top: 330px;
+}
+.social_icons {
+    display: inline-block;
+    margin-left: 40px;
+    display: inline-flex;
+}
+.icon-item{
+    display: block;
+    height: 32px;
+    width: 32px;
+    padding: 9px;
+    background: rgba(0,5,33, 0.2);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+.icon-item img {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+.payments {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.payments img {
+    margin: 3px 20px;
+}
+.sm-block {
+    display: none;
+}
+footer p {
+    font-size: 8px;
+    line-height: 140%;
+    color: rgba(255,255,255, 0.5);
+    font-family: "Avenir Next";
+    display: block;
+    text-align: center;
+}
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.wrapper {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.first-section {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.wave {
+  position: absolute;
+  top: 297px;
+  right: 0;
+  max-width: 100%;
+  min-width: 100%;
+  left: 0;
+
+}
+
+@media screen and (max-width: 1920px) {
+  .wave {
+    top: 360px
+  }
+}
+@media screen and (max-width: 1700px) {
+  .wave {
+    top: 400px
+  }
+}
+
+@media screen and (max-width: 769px) {
+    .language-select {
+        display: none;
+
+    }
+    .sm-start-flex {
+        justify-content: space-between !important;
+        align-items: center;
+    }
+    .sm-d-flex {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    .sm-d-flex img {
+        max-width: 120px;
+    }
+
+    .first-section h1 {
+        font-size: 28px;
+        line-height: 120%;
+    }
+    .first-section {
+        padding-top: 50px;
+    }
+    .sm-block {
+        display: block !important;
+        padding-right: 5px;
+    }
+    .first-section {
+        min-height: 80vh;
+    }
+    .logo-div {
+        display: flex;
+        align-items: center;
+    }
+    header .col-6:first-child {
+        display: flex;
+        align-items: center;
+    }
+    header img {
+        max-width: 150px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+  .flipper {
+    width: 380px;
+    height: initial;
+    right: 241px;
+    top: 252px;
+
+  }
+  #island {
+    width: 316px
+  }
+
+  .first-section h6 {
+    margin-top: 25px;
+  }
+  .wave {
+    top: 333px;
+
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  footer {
+    padding-top: 225px;
+  }
+  .wave {
+    max-width: 100%;
+  }
+  #island {
+    top: 263px;
+  }
+  .wave {
+    top: 420px;
+  }
+  .flipper {
+    top: 331px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .wave {
+    top: 443px;
+  }
+  .first-section {
+    min-height: initial;
+    padding-top: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .flipper {
+    top: 403px;
+    width: 335px;
+    right: 192px;
+  }
+  #island {
+    top: 295px;
+    width: 293px;
+  }
+  .wave {
+    top: 502px;
+  }
+  footer {
+    padding-top: 340px;
+  }
+  .logo {
+    height: initial;
+  }
+
+
+}
+
+.wave-mobile {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .wave {
+    display: none;
+  }
+  footer {
+    padding-top: 384px
+  }
+  .wave-mobile {
+    display: block;
+    position: absolute;
+    top: 397px;
+    right: 0;
+    width: 100%;
+    height: 332px;
+    left: 0;
+  }
+  body {
+    background: url(../img/mobile-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .lang-header {
+    display: none !important;
+  }
+  .first-section p {
+    font-size: 16px;
+    margin-bottom: 3rem;
+  }
+  header {
+    padding: 17px 0;
+
+    padding-bottom: 30px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .wave-mobile {
+    top: 378px;
+  }
+  .flipper {
+    width: 273px;
+    top: 443px;
+    right: 150px;
+  }
+  #island {
+    top: 273px;
+    width: 250px;
+  }
+  .first-section h6 {
+    margin-top: 0;
+  }
+  .payments img {
+    margin: 3px 1px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  #island {
+    top: 253px;
+    width: 209px;
+  }
+  .flipper {
+    width: 253px;
+        top: 451px;
+        right: 79px;
+  }
+  footer {
+    padding-top: 441px;
+  }
+}
+
+.popup {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: none;
+
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0, 0.4);
+  z-index: 99999999999
+}
+
+.popup-content {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background: white;
+  border-radius: 7px;
+  padding: 30px 20px;
+  margin: 50px 0;
+  color: black;
+
+}
+.popup-content ol {
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.popup-content ol li {
+  margin-bottom: 10px;
+}
+.popup-content  * {
+  color: black;
+}
+.close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 26px;
+  color: black;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}

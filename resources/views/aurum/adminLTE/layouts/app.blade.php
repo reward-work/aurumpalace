@@ -70,7 +70,7 @@
 
                         </a>
                         <ul class="dropdown-menu">
-                            @foreach(App\Http\Middleware\LocaleMiddleware::loadLanguages() as $language)
+                            @foreach(App\Http\Middleware\LocaleMiddleware::loadLanguages(false) as $language)
                                 <li><a href="{{ route('setlocale', ['lang' => $language->slug]) }}" style="text-transform: capitalize">{{ $language->name }}</a></li>
                             @endforeach
                         </ul>

@@ -26,6 +26,19 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+      $getParams = [];
+      foreach($_GET as $key => $value)
+        {
+           $getParams[$key] = $value;
+        }
+        if(count($getParams) > 0) {
+          $getParams = '?'.http_build_query($getParams);
+        }
+        else {
+          $getParams = http_build_query($getParams);
+        }
+
+
         view()->composer('*', function ($view)
         {
             if(Auth::check()) {
@@ -39,5 +52,6 @@ class AppServiceProvider extends ServiceProvider
         $templates = Template::all();
 
         View::share('templates', $templates);
+        View::share('getParams', $getParams);
     }
 }

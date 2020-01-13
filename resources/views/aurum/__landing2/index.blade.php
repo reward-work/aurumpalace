@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="{{ asset('__landing2/css/bootstrap-grid.min.css') }}"/>
     <link rel="stylesheet" href="{{ asset('__landing2/fonts/GothamPro.css') }}">
     <link rel="stylesheet" href="{{ asset('__landing2/css/style.css') }}"/>
+    <link rel="shortcut icon" href="/img/favicona.png">
+    
 </head>
 <body>
 <div class="main_wrapper">
@@ -22,7 +24,7 @@
             </a>
             <div class="header_nav d-flex flex-lg-row justify-content-between align-items-center">
                 <div class="header_btn d-flex flex-row align-items-center">
-                    <a class="btn" href="/?aff_lb=1">{!! $fields['signup_button_text'] !!}</a>
+                    <a class="btn" href="{{ $fields['button_href_text_1_section'] }}{{ $getParams }}">{!! $fields['signup_button_text'] !!}</a>
                 </div>
             </div>
         </div>
@@ -42,7 +44,7 @@
                                 </div>
                                 <div class="main_terms">{!! $fields['terms_html'] !!}</div>
                                 <div class="main_btn">
-                                    <a href="{{ $fields['button_href_text_1_section'] }}<?php if($fields['open_register'] === "on") { echo '?aff_lb=1'; } ?>" class="btn">{!! $fields['button_text_1_section'] !!}</a>
+                                    <a href="{{ $fields['button_href_text_1_section'] }}{{ $getParams }}" class="btn">{!! $fields['button_text_1_section'] !!}</a>
                                 </div>
                             </div>
                         </div>
@@ -178,30 +180,6 @@
 
     </style>
 @endif
-<script>
 
-    var urls = document.querySelectorAll('a');
-
-    console.log(urls);
-
-    function clickToA(e) {
-        e.preventDefault();
-        var url = e.target.baseURI;
-
-        url += '?btag=' + window.btag;
-        console.log(url);
-        window.location.href = url;
-
-    }
-
-    urls.forEach(function(element) {
-        if(window.btag != null) {
-            element.addEventListener('click', clickToA, false);
-        }
-    });
-
-
-
-</script>
 </body>
 </html>

@@ -19,6 +19,8 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        '/template/set'
+        '/template/set',
+        '/json/*',
+        '/{landing}/getFields',
     ];
 }

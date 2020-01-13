@@ -7,7 +7,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AURUMPALACE</title>
-    <link rel="shortcut icon" type="image/png" href="{{ asset('images/fav.png') }}"/>
+    <link rel="shortcut icon" href="/img/favicona.png">
+
     <link rel="stylesheet" href="{{ asset('__landing4/css/reset.css') }}"/>
     <link rel="stylesheet" href="{{ asset('__landing4/css/bootstrap-grid.min.css') }}"/>
     <link rel="stylesheet" href="{{ asset('__landing4/fonts/lato.css') }}">
@@ -22,7 +23,7 @@
             </a>
             <div class="header_nav d-flex flex-lg-row justify-content-between align-items-center">
                 <div class="header_btn d-flex flex-row align-items-center">
-                    <a class="btn" href="https://www.aurumpalace.com/promotions/game-phones-tournament-aurumpalace<?php if($fields['open_register'] === "on") { echo '?aff_lb=1'; } ?>">{!! $fields['signup_button_text'] !!}</a>
+                    <a class="btn" href="{{ $fields['button_href_text_1_section'] }}{{ $getParams }}">{!! $fields['signup_button_text'] !!}</a>
                 </div>
             </div>
         </div>
@@ -42,7 +43,7 @@
                                 </div>
                                 <div class="main_date">{!! $fields['date'] !!}</div>
                                 <div class="main_btn">
-                                    <a href="{{ $fields['button_href_text_1_section'] }}" class="btn">{!! $fields['button_text_1_section'] !!}</a>
+                                    <a href="{{ $fields['button_href_text_1_section'] }}{{ $getParams }}" class="btn">{!! $fields['button_text_1_section'] !!}</a>
                                 </div>
                             </div>
                             <div class="main_content_bg d-none d-lg-block">
@@ -165,23 +166,7 @@
         </div>
     </footer>
 </div>
-<script>
-    var getParamUrl = new URLSearchParams(window.location.search);
-    window.btag = getParamUrl.get('btag');
-    function setCookie(name, value, days) {
-        var expires = "";
-        if (days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-            expires = "; expires=" + date.toUTCString();
-        }
-        document.cookie = name + "=" + (value || "") + expires + "; path=/";
-        $("#popup_acceptcookie").remove();
-    }
-    if (getParamUrl.get('btag') != null && getParamUrl.get('btag') != '') {
-        setCookie('pwr_btag', getParamUrl.get('btag'), 90);
-    }
-</script>
+@include('aurum.vendors.scripts')
 <style>
     @media screen and (orientation: landscape) and (max-width: 768px) {
         .header_logo img {
@@ -237,30 +222,6 @@
         }
     }
 </style>
-<script>
 
-    var urls = document.querySelectorAll('a');
-
-    console.log(urls);
-
-    function clickToA(e) {
-        e.preventDefault();
-        var url = e.target.baseURI;
-
-        url += '?btag=' + window.btag;
-        console.log(url);
-        window.location.href = url;
-
-    }
-
-    urls.forEach(function(element) {
-        if(window.btag != null) {
-            element.addEventListener('click', clickToA, false);
-        }
-    });
-
-
-
-</script>
 </body>
 </html>

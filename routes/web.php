@@ -13,8 +13,6 @@
 
 
 
-
-
 Auth::routes([
     'register' => false,
     'reset' => false,
@@ -53,8 +51,15 @@ Route::group(['prefix' => App\Http\Middleware\LocaleMiddleware::getLocale()], fu
     Route::get('/{slug}', 'IndexController@index');
 
 
-});
 
+
+});
+Route::post('/json/{lang}/{landing}/getFields', 'FieldsController@getFields')->name('fields');
+Route::post('/json/getLanguages', function() {
+    $languages = \App\Http\Middleware\LocaleMiddleware::loadLanguages();
+
+    return response()->json(['languages' => $languages]);
+});
 
 
 Route::get('setlocale/{lang}', 'LanguagesController@set')->name('setlocale');

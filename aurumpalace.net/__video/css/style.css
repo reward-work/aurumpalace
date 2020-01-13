@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "Avenir Next";
+  src: url(../fonts/AvenirNextCyr-Regular.ttf);
+  font-weight: normal;
+}
+
+
+@font-face {
+  font-family: "Avenir Next Bold";
+  src: url(../fonts/AvenirNextCyr-Bold.ttf);
+  font-weight: bold;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "Avenir Next";
+  color: #fff;
+}
+
+
+body {
+  background-color: #2F80ED;
+  background-image: url(../img/bg.png);
+  background-size: cover;
+
+  min-width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+header {
+  padding: 30px 0;
+  margin-bottom: 41px;
+}
+.logo-img {
+  width: 182px;
+  height: 90px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.first-section h2 {
+  font-size: 46px;
+  line-height: 120%;
+  font-family: "Avenir Next Bold";
+  color: #fff;
+  margin-bottom: 30px;
+}
+.first-section h4 {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Avenir Next Bold";
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.btn-orange {
+  background: #FF800E;
+  border-radius: 6px;
+  padding: 10px 40px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 600;
+}
+.btn-orange:hover {
+  color: #fff;
+}
+
+video {
+  max-width: 100%;
+}
+video source {
+  max-width: 100%;
+}
+.video-wrap {
+  padding-left: 15px
+}
+.first-section {
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  margin-bottom: 245px;
+}
+.second-section {
+  padding-top: 0;
+  padding-bottom: 77px;
+  background: url(../img/bg2.png);
+  background-size: cover;
+}
+.second-section h2 {
+  color: #000;
+  font-size: 46px;
+  color: #000521;
+  line-height: 120%;
+  font-family: "Avenir Next Bold";
+  margin-bottom: 30px;
+}
+.btn-orange {
+  transition: 0.3s;
+}
+.btn-orange:hover {
+  opacity: 0.7;
+}
+
+.mach-img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1920px) {
+  .first-section {
+    padding-top: 0;
+    margin-bottom: 220px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .first-section {
+    padding-top: 0;
+    margin-bottom: 200px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .first-section {
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .text-center-md {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .video-wrap {
+    padding-left: 15px;
+  }
+  header {
+    margin-bottom: 0;
+  }
+
+  body {
+    background-size: 135% 115%;
+  }
+  .second-section h2 {
+    font-size: 32px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .text-sm-center {
+    text-align: center;
+  }
+  body {
+    background-size: 187% 100%;
+  }
+  .second-section {
+    padding-top: 70px;
+  }
+  .mach-img {
+    max-width: 74%;
+    margin: 0 auto;
+    display: block;
+  }
+  .first-section h2 {
+    font-size: 32px;
+  }
+  .first-section h4 {
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (max-width: 560px) {
+  body {
+    background-size: 282% 105%;
+  }
+  .second-section {
+    padding-top: 0;
+  }
+}

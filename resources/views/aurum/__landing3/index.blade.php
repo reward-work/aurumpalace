@@ -7,7 +7,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AURUMPALACE</title>
-    <link rel="shortcut icon" type="image/png" href="{{ asset('__landing3/images/fav.png') }}"/>
+    <link rel="shortcut icon" href="/img/favicona.png">
+
     <link rel="stylesheet" href="{{ asset('__landing3/css/reset.css') }}"/>
     <link rel="stylesheet" href="{{ asset('__landing3/css/bootstrap-grid.min.css') }}"/>
     <link rel="stylesheet" href="{{ asset('__landing3/css/Sans%20Sourse%20Pro.css') }}">
@@ -22,7 +23,7 @@
             </a>
             <div class="header_nav d-flex flex-lg-row justify-content-between align-items-center">
                 <div class="header_btn d-flex flex-row align-items-center">
-                    <a class="btn" href="/?aff_lb=1">{!! $fields['signup_button_text'] !!}</a>
+                    <a class="btn" href="{{ $fields['button_href_text_1_section'] }}{{ $getParams }}">{!! $fields['signup_button_text'] !!}</a>
                 </div>
             </div>
         </div>
@@ -42,7 +43,7 @@
                                 </div>
                                 <div class="main_terms">{!! $fields['terms_html'] !!}</div>
                                 <div class="main_btn">
-                                    <a href="{{ $fields['button_href_text_1_section'] }}<?php if($fields['open_register'] === "on") { echo '?aff_lb=1'; } ?>" class="btn">{!! $fields['button_text_1_section'] !!}</a>
+                                    <a href="{{ $fields['button_href_text_1_section'] }}{{ $getParams }}" class="btn">{!! $fields['button_text_1_section'] !!}</a>
                                 </div>
                             </div>
                         </div>
@@ -186,31 +187,6 @@
         /*@media screen and (m)*/
     </style>
 @endif
-<script>
 
-    var urls = document.querySelectorAll('a');
-
-    console.log(window.btag);
-
-    function clickToA(e) {
-        e.preventDefault();
-        var url = e.target.baseURI;
-
-        url += '?btag=' + window.btag;
-        console.log(url);
-        window.location.href = url;
-
-    }
-
-    urls.forEach(function(element) {
-        if(window.btag != null) {
-            element.addEventListener('click', clickToA, false);
-        }
-
-    });
-
-
-
-</script>
 </body>
 </html>

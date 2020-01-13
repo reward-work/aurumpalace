@@ -25,24 +25,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-//        $i = 1;
-//        $languages = \App\Http\Middleware\LocaleMiddleware::loadLanguages();
-//        foreach(['template1', 'template2','template3', 'template4'] as $temp) {
-//            foreach($languages as $lang) {
-//                $create = Field::create([
-//                    'name' => 'terms_html',
-//                    'location' => '__landing'.$i,
-//                    'placeholder' => 'Bonus & Terms & conditions',
-//                    'type' => 'textarea',
-//                    'order' => 6,
-//                    'language' => $lang->slug,
-//                    'template' => $temp,
-//                ]);
-//                dump($create);
-//            }
-//            $i++;
-//        }
-
 
         $templates = Template::all();
 

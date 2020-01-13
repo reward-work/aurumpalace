@@ -112,4 +112,31 @@ class FieldsController extends Controller
 
         return false;
     }
+
+
+    public function getFields($lang, $landing) {
+
+        $lang = \App\Language::where('slug', '=', $lang)->first();
+
+        if(!$lang) {
+          return response()->json([
+            'type' => 'error',
+            'message' => 'Language not found.'
+          ]);
+        }
+
+        $fields = Field::where('location', '=', $landing)->where('language', '=', $lang->slug)->get();
+
+
+        $array = [];
+
+        foreach($fields as $field) {
+            $array[$field->name] = $field->value;
+        }
+
+        return response()->json($array);
+
+    }
+
+
 }
